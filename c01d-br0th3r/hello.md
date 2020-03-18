@@ -1,2 +1,3 @@
-## Hello, Algorithms
-My name is Cha JaeYun. Nice 2 meet ya!
+# Algorithm
+
+I hate it holy shit hard difficult fuck
