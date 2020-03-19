@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+ 
+int main(){
+    	cin.tie(NULL);                      // 속도 printf,scanf >> cin , cout 
+	ios::sync_with_stdio(false);    // 이 구문을 쓰면 printf,scanf와 stdio 함수등을  cin,cout을 같이 쓰면 오류남
+	int n,m;
+	map<string,string> dogam_map;
+	cin>>n>>m;
+	for(int i=0;i<n;i++){
+		string dogam;
+		cin>>dogam;
+		dogam_map.insert({to_string(i+1),dogam});  // map 삽입 log(n) 결국 이분탐색과 같음
+		dogam_map.insert({dogam,to_string(i+1)});
+	}
+	for(int i=0;i<m;i++){
+		string ans;
+		cin>>ans;
+		cout<<dogam_map[ans]<<'\n'; // 속도  endl (개행 + 버퍼 작업)< '\n' (개행) 
+	}
+	return 0;
+}
