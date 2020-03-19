@@ -1,0 +1,21 @@
+#include<cstdio>
+
+int go(int n){
+ int ret=n;
+ while(n){
+  ret+=n%10;
+  n/=10; 
+ }
+ return ret;
+}
+int main(){
+ int n;
+ scanf("%d",&n);
+ for(int i=1;i<n;i++){  // 아무리 잘 풀어야 그리디지만 굳이 그리디 쓸 이유가 없음.
+  if(go(i)==n){		// 다른 방법으론 재귀가 있음. 
+   printf("%d",i);
+   return 0;
+  }
+ }
+ puts("0");
+}
