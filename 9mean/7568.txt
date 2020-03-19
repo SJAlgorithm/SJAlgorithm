@@ -1,0 +1,33 @@
+#include <stdio.h>
+struct person{
+	int kg;
+	int cm;
+	int score;
+};
+int main(void) {
+	int i,j,input;
+	scanf("%d",&input);
+	struct person p[50];
+	for(i=0;i<input;i++)
+	{
+		scanf("%d%d",&p[i].kg,&p[i].cm);
+		p[i].score=input;
+	}
+	for(i=0;i<input;i++)
+	{
+		for(j=0;j<input;j++)
+		{
+			if(i==j)
+			continue;
+			if(((p[i].kg>=p[j].kg)||(p[i].cm>=p[j].cm)))
+			{
+				p[i].score--;
+			}
+ 
+		}
+	}
+	for(i=0;i<input;i++)
+	printf("%d ",p[i].score);
+ 
+	return 0;
+}
