@@ -1,0 +1,41 @@
+#include <stdio.h>
+struct pocketmon{
+	char id[20];
+	int idx;
+};
+int main(void) {
+	int i,j,input,question,flag;
+	char real_q;
+	char flag2[20];
+	scanf("%d%d",&input,&question);
+	
+	struct pocketmon p[input];
+	
+	for(i=0;i<input;i++)
+	{	
+		scanf("%s",&p[i].id);
+		p[i].idx=i+1;
+	}
+	for(i=0;i<question;i++)
+	{
+		scanf("%s",&real_q);
+		flag2[i]=real_q;
+	}
+	for(i=0;i<question;i++)
+	{
+		if(flag2[i]>='0'&&flag2[i]<='9')
+			{
+				flag=flag2-48;
+				printf("%s\n",p[flag].id);
+			}
+			else
+			{
+				for(j=0;j<input<j++)
+				{
+					if(p[j].id==flag2[i])
+					printf("%d\n",p[j].idx);
+				}
+			}
+	}
+	return 0;
+}
