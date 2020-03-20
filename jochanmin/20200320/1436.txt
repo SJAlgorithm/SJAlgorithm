@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+bool digitchk(int num){
+	int cnt=0;
+	while(num){
+		if(num%10==6)
+		 cnt++;
+		else
+		 cnt=0;
+		if(cnt==3)
+		 return true;
+		num/=10;
+	}
+	return false;
+}
+
+int main() {
+	int n,cnt=0,ret=666;
+	scanf("%d",&n);
+	while(1){  // string find 을 이용해도됨. 어짜피 시간복잡도똑같음.
+		if(digitchk(ret))
+		 cnt++;
+		if(cnt==n)
+		 break;
+		ret++;
+	}
+	printf("%d",ret);
+	return 0;
+}
