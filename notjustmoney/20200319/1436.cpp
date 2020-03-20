@@ -2,7 +2,6 @@
 	using namespace std;
 	
 	bool isDeath(int n) {
-		int count=0;
 		while(n) {
 			if(n%1000==666){
 				return true;
