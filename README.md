@@ -16,9 +16,9 @@
 
 ### 2020/03/18 by PS-Master
 
-* 하 : [BOJ_2231](https://www.acmicpc.net/problem/2231) -> 브루트포스   , <분해합>
-* 중 : [BOJ_7568](https://www.acmicpc.net/problem/7568) -> 브루트포스 , <덩치>
-* 상 : [BOJ_1620](https://www.acmicpc.net/problem/1620) -> 이분탐색 , <나는야 포켓몬 마스터 이다솜>
+* 하 : [BOJ_2231](https://www.acmicpc.net/problem/2231) **분해합** : 브루트포스
+* 중 : [BOJ_7568](https://www.acmicpc.net/problem/7568) **덩치** : 브루트포스
+* 상 : [BOJ_1620](https://www.acmicpc.net/problem/1620) **나는야 포켓몬 마스터 이다솜** : 이분탐색
 
 *****************************************************************************
 
