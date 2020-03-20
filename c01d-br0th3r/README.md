@@ -1,3 +1,3 @@
 # Algorithm
 
-I hate it holy shit hard difficult fuck
+잘 하고 싶어요ㅠ
