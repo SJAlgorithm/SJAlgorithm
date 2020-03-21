@@ -12,29 +12,28 @@ void rDFS(int V, bool* visited) {
 			if(!visited[i]) rDFS(i, visited);
 		}
 	}
-	
 }
 
 void DFS(int V){
-	bool visited[1001];
+	bool visited[N+1];
 	rDFS(V, visited);
 	printf("\n");
 }
 
 void BFS(int V){
 	bool visited[N+1];
-	vector<int> q;
+	queue<int> q;
 	visited[V] = true;
-	q.push_back(V);
-	while(q.size() != 0) {
+	q.push(V);
+	while(q.size() != 0) { 
 		V = q.front();
-		q.erase(q.begin());
+        q.pop();
 		printf("%d ", V);	
 		for(int i=1; i<=N; i++) {
 			if(e[V][i]){
 				if(!visited[i]){
 					visited[i] = true;
-					q.push_back(i);	
+					q.push(i);	
 				}
 			}
 		}

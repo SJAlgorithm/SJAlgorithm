@@ -22,6 +22,7 @@ int main() {
 	
 	int start=1, end=max, mid;
 	long long sum;
+	
 	while(start <= end) {
 		mid = (start+end)/2;
 		sum = cut(mid, tree);
@@ -29,7 +30,7 @@ int main() {
 			end = mid-1;	
 		} else {
 			start = mid+1;
-		}
+		} 
 	}
 	printf("%d\n", end);
 	return 0;
