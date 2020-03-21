@@ -1,0 +1,32 @@
+#include<cstdio>
+using namespace std;
+
+int main() {
+	char arr[50002];
+	scanf("%s\n",arr);
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		int cnt1[26]={0};
+		int cnt2[26]={0};
+		int a,b,c,d;
+		scanf("%d %d %d %d",&a,&b,&c,&d);
+		for(int j=a-1;j<b;j++){
+			cnt1[arr[j]-'a']++;
+		}
+		for(int j=c-1;j<d;j++){
+			cnt2[arr[j]-'a']++;
+		}
+		int chk=0;
+		for(int j=0;j<26;j++){
+			if(cnt1[j]!=cnt2[j]){
+				printf("NE\n");
+				chk=1;
+				break;
+			}
+		}
+		if(!chk)
+		 printf("DA\n");
+	}
+	return 0;
+}
