@@ -1,0 +1,21 @@
+#include <cstdio>
+using namespace std;
+char arr[26];
+int main() {
+	int n,cnt=2;
+	scanf("%d",&n);
+	char tmp;
+	scanf(" %c",&tmp);
+	for(int i=1;i<n;i++)
+	{
+		char ch;
+		scanf(" %c",&ch);
+		if(tmp==ch){
+			continue;
+		}
+		tmp=ch;
+		cnt++;
+	}
+	printf("%d",cnt);
+	return 0;
+}

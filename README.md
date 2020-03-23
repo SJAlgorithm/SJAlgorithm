@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/03/22 by c01d-br0th3r
+
+* 하 : [BOJ 9012](https://www.acmicpc.net/problem/9012) **괄호** : 스택
+* 중 : [BOJ 14501](https://www.acmicpc.net/problem/14501) **퇴사** : DP
+* 상 : [BOJ 1987](https://www.acmicpc.net/problem/1987) **알파벳** : DFS, 백트래킹
+
+*****************************************************************************
+
 ### 2020/03/20 by jochanmin
 * 하: [BOJ 15354](https://www.acmicpc.net/problem/15354) **Aron** : 구현
 * 중: [BOJ 15355](https://www.acmicpc.net/problem/15355) **Programiranje** : DP,구현
