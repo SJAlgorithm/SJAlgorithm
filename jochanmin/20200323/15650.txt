@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool visit[8];
+int arr[]={1,2,3,4,5,6,7,8};
+vector<int> ans;
+void bfs(int node,int n,int m,int cnt){
+	
+	visit[node]=true;
+	if(cnt==m){
+		ans.push_back(node+1);
+		for(int i=0;i<ans.size();i++)
+		 printf("%d ",ans[i]);
+		printf("\n");
+		visit[node]=false;
+		ans.pop_back();
+		return;
+	}
+	for(int i=node+1;i<n;i++){
+		if(n-i >= m-cnt){
+			ans.push_back(node+1);
+			bfs(i,n,m,cnt+1);
+			ans.pop_back();
+		}
+	}
+	visit[node]=false;
+}
+int main(){
+	int n,m;
+	scanf("%d %d",&n,&m);
+	for(int i=0;i<n;i++){
+		bfs(i,n,m,1);
+	}
+	return 0;
+}

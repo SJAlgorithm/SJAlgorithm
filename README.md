@@ -1,5 +1,21 @@
 # Solved Problem List
 
+### 2020/03/23 by PS-Master
+
+* 하 : [BOJ 15650](https://www.acmicpc.net/problem/15650) **N과M(2)** : 백트래킹
+* 중 : [BOJ 2630](https://www.acmicpc.net/problem/2630) **색종이 만들기** : 분할정복
+* 상 : [BOJ 2580](https://www.acmicpc.net/problem/2580) 또는 [BOJ 2239](https://www.acmicpc.net/problem/2239) **스도쿠** : 백트래킹, 구현
+
+*****************************************************************************
+
+### 2020/03/22 by c01d-br0th3r
+
+* 하 : [BOJ 9012](https://www.acmicpc.net/problem/9012) **괄호** : 스택
+* 중 : [BOJ 14501](https://www.acmicpc.net/problem/14501) **퇴사** : DP
+* 상 : [BOJ 1987](https://www.acmicpc.net/problem/1987) **알파벳** : DFS, 백트래킹
+
+*****************************************************************************
+
 ### 2020/03/20 by jochanmin
 * 하: [BOJ 15354](https://www.acmicpc.net/problem/15354) **Aron** : 구현
 * 중: [BOJ 15355](https://www.acmicpc.net/problem/15355) **Programiranje** : DP,구현
