@@ -1,5 +1,21 @@
 # Solved Problem List
 
+### 2020/03/24 by notjustmoney
+
+* 하 : [BOJ 1780](https://www.acmicpc.net/problem/1780) **종이의 개수** : 분할정복
+* 중 : [BOJ 2293](https://www.acmicpc.net/problem/2293) **동전1** : DP
+* 상 : [BOJ 3850](https://www.acmicpc.net/problem/3850) **Jumping Monkey** : BFS
+
+*****************************************************************************
+
+### 2020/03/23 by PS-Master
+
+* 하 : [BOJ 15650](https://www.acmicpc.net/problem/15650) **N과M(2)** : 백트래킹
+* 중 : [BOJ 2630](https://www.acmicpc.net/problem/2630) **색종이 만들기** : 분할정복
+* 상 : [BOJ 2580](https://www.acmicpc.net/problem/2580) 또는 [BOJ 2239](https://www.acmicpc.net/problem/2239) **스도쿠** : 백트래킹, 구현
+
+*****************************************************************************
+
 ### 2020/03/22 by c01d-br0th3r
 
 * 하 : [BOJ 9012](https://www.acmicpc.net/problem/9012) **괄호** : 스택
