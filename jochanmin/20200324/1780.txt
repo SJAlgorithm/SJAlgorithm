@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int arr[2187][2187];
+int cnt_1,cnt_2,cnt_3;
+void bunhal(int x1,int y1,int x2,int y2){
+	bool flag_1=false,flag_2=false,flag_3=false;
+		for(int i=y1;i<y2;i++){
+			for(int j=x1;j<x2;j++){
+				if(arr[i][j]==-1)
+				 flag_1=true;
+				if(arr[i][j]==1)
+				 flag_2=true;
+				if(arr[i][j]==0)
+				 flag_3=true;
+			}
+		}
+		if(flag_1 && !flag_2 && !flag_3){
+			cnt_1++;
+		}else if(!flag_1 && flag_2 && !flag_3){
+			cnt_2++;
+		}else if(!flag_1 && !flag_2 && flag_3){
+			cnt_3++;
+		}else if(!flag_1 && !flag_2&& !flag_3){
+			return;
+		}
+		else{
+			int dx[]={x1,(x2+2*x1)/3,(x2*2+x1)/3,x1,(x2+2*x1)/3,(x2*2+x1)/3,x1,(x2+2*x1)/3,(x2*2+x1)/3};
+			int dy[]={y1,y1,y1,(2*y1+y2)/3,(2*y1+y2)/3,(2*y1+y2)/3,(y1+y2*2)/3,(y1+y2*2)/3,(y1+y2*2)/3};
+			int dx2[]={(x2+2*x1)/3,(2*x2+x1)/3,x2,(x2+2*x1)/3,(2*x2+x1)/3,x2,(x2+2*x1)/3,(2*x2+x1)/3,x2  };
+			int dy2[]={(y2+2*y1)/3,(y2+2*y1)/3,(y2+2*y1)/3,(y2*2+y1)/3,(y2*2+y1)/3,(y2*2+y1)/3,y2,y2,y2};
+			for(int i=0;i<9;i++){
+				bunhal(dx[i],dy[i],dx2[i],dy2[i]);
+			}
+		}
+}
+
+int main(){
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	bunhal(0,0,n,n);
+	printf("%d\n%d\n%d",cnt_1,cnt_3,cnt_2);
+	return 0;
+}
