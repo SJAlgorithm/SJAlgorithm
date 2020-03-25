@@ -1,0 +1,55 @@
+#include <stdio.h>
+int cnt_w=0;
+int cnt_b=0;
+int a[128][128];
+void div(int x1,int y1, int x2, int y2)
+{
+	int flag=0,flag2=0;
+	for(int i=x1;i<x2;i++)
+	{
+		for(int j=y1;j<y2;j++)
+		{
+			if(a[i][j]==0)
+			{
+				flag=1;
+			}
+			else
+			{
+				flag2=1;
+			}
+		}
+		
+	}
+	
+	if(flag==flag2) 
+	{
+		div(x1,y1,(x1+x2)/2,(y1+y2)/2);
+		div((x1+x2)/2,y1,x2,(y1+y2)/2);
+		div(x1,(y1+y2)/2,(x1+x2)/2,y2);
+		div((x1+x2)/2,(y1+y2)/2,x2,y2);
+	}
+	else if(flag==1)
+	{
+		cnt_w++;
+	}
+	else
+	{
+		cnt_b++;
+	}
+}
+int main(void) {
+
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}		
+	}
+	div(0,0,n,n);
+	printf("%d\n%d",cnt_w,cnt_b);
+	
+	return 0;
+}
