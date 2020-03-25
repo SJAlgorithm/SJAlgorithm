@@ -3,7 +3,7 @@
 ### 2020/03/24 by notjustmoney
 
 * 하 : [BOJ 1780](https://www.acmicpc.net/problem/1780) **종이의 개수** : 분할정복
-* 중 : [BOJ 2239](https://www.acmicpc.net/problem/2239) **동전1** : DP
+* 중 : [BOJ 2293](https://www.acmicpc.net/problem/2293) **동전1** : DP
 * 상 : [BOJ 3850](https://www.acmicpc.net/problem/3850) **Jumping Monkey** : BFS
 
 *****************************************************************************
