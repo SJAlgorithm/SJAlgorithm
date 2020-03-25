@@ -5,7 +5,7 @@ int main() {
 	int A, B, N, M;
 	scanf("%d %d %d %d", &A, &B, &N, &M);
 	
-	bool visited[100000] = {false};
+	bool visited[M] = {false};
 	queue<int> q;
 	queue<int> cq;
 	q.push(N);
@@ -15,7 +15,7 @@ int main() {
 		int count = cq.front();
 		q.pop();
 		cq.pop();
-		if(pos==M) {
+		if(pos==100001) {
 			printf("%d\n", count);
 			return 0;	
 		}
