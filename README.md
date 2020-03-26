@@ -5,7 +5,7 @@
 
 * 하 : [BOJ 7576](https://www.acmicpc.net/problem/7576) **토마토**
 * 중 : [BOJ 1759](https://www.acmicpc.net/problem/1759) **암호만들기**
-* 상 : -
+* 상 : [BOJ 2662](https://www.acmicpc.net/problem/2662) **기업투자**
 
 *****************************************************************************
 
