@@ -1,8 +1,9 @@
 # Solved Problem List
 
+
 ### 2020/03/26 by c01d-br0th3r
 
-* 하 : [BOJ 7576](https://www.acmicpc.net/problem/7576) **토마토** : 스택
+* 하 : [BOJ 7576](https://www.acmicpc.net/problem/7576) **토마토**
 * 중 : [BOJ 1759](https://www.acmicpc.net/problem/1759) **암호만들기**
 * 상 : -
 
