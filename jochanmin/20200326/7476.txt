@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+int dx[]={1,0,0,-1};
+int dy[]={0,1,-1,0};
+int arr[1001][1001];
+int m_cnt;
+int main() {
+	int n,m;
+	bool flag=false;
+	queue<pair<pair<int,int>,int>> viii;
+	scanf("%d %d",&m,&n);
+	for(int i=0;i<n;i++){
+		for(int j=0;j<m;j++){
+			scanf("%d",&arr[i][j]);
+			if(arr[i][j]==1)
+			 viii.push(make_pair(make_pair(i,j),0));
+		}
+	}
+	for(int i=0;i<n;i++){
+		for( int j=0;j<m;j++){
+			if(arr[i][j]==0)
+				flag=true;
+		}
+	}
+	if(!flag){
+	 printf("0");
+	 return 0;
+	}
+	while(!viii.empty()){
+		int x=viii.front().first.first;
+		int y=viii.front().first.second;
+		int cnt =viii.front().second;
+		if(cnt>m_cnt)
+		 m_cnt=cnt;
+		viii.pop();
+		for(int i=0;i<4;i++){
+			int x2=x+dx[i];int y2=y+dy[i];
+			if(x2>=0 && y2>=0 && x2 <n && y2<m && arr[x2][y2]==0){
+				arr[x2][y2]=1;
+				viii.push(make_pair(make_pair(x2,y2),cnt+1));
+			}
+		}
+	}
+	for(int i=0;i<n;i++){
+		for( int j=0;j<m;j++){
+			if(arr[i][j]==0)
+			 flag=false;
+		}
+	}
+	if(flag)
+	 printf("%d",m_cnt);
+	else
+	 printf("-1");
+	return 0;
+}

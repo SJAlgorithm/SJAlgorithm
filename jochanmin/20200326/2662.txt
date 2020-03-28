@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int arr[301][21]; // 입력
+int dp[301][21]; // 계산 
+int check[301][21]; // 저장
+int go(int tuja,int comIdx,int m){
+	if(comIdx>m)
+	 return 0;
+	 int &ret=dp[tuja][comIdx];
+	if(ret != -1)
+	 return ret;
+	ret=0;
+	for(int i=0;i<=tuja;i++){
+		int compare=arr[i][comIdx]+go(tuja-i,comIdx+1,m);
+		if(ret<compare)
+		{
+			ret=compare;
+			check[tuja][comIdx]=i;
+		}
+	}
+	return ret;
+	
+}
+int main() {
+	int n,m;
+	scanf("%d %d",&n,&m);
+	memset(dp,-1,sizeof(dp));
+	for(int i=0;i<n;i++){
+		scanf("%*d");
+		for(int j=1;j<=m;j++){
+			int eik;scanf("%d",&eik);
+			arr[i+1][j]=eik;
+		}
+	}
+	printf("%d\n",go(n,1,m));
+	int total=n;
+	for(int i=1;i<=m;i++){
+		printf("%d ",check[total][i]);
+		total-=check[total][i];
+	}
+	return 0;
+}

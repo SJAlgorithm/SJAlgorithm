@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+char alpha[17];
+vector<char> ans;
+void go(int i,int l,int c,int cnt){
+	if(cnt==l){
+		int chk_m=0,chk_j=0;
+		for(int j=0;j<ans.size();j++){
+			if(ans[j]=='a' ||ans[j]=='e' ||ans[j]=='i'||ans[j]=='o'||ans[j]=='u')
+			 chk_m++;
+			else
+			 chk_j++;
+		}
+		if(chk_m>0 && chk_j>1){
+			for(int j=0;j<ans.size();j++){
+				printf("%c",ans[j]);
+			}
+			printf("\n");
+		}
+		else
+		 return;
+	}
+	for(int j=i+1;j<c;j++){
+		if(c-j>=l-cnt){
+				ans.push_back(alpha[j]);
+				go(j,l,c,cnt+1);
+				ans.pop_back();
+		}
+		else
+		 return;
+	}
+}
+int main(){
+	int l,c;
+	scanf("%d %d",&l,&c);
+	for(int i=0;i<c;i++){
+		scanf(" %c",&alpha[i]);
+	}
+	sort(alpha,alpha+c);
+	for(int i=0;i<=c-l;i++){
+		ans.push_back(alpha[i]);
+		go(i,l,c,1);
+		ans.pop_back();
+	}
+	return 0;
+}
