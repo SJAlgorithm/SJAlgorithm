@@ -1,12 +1,10 @@
 # Solved Problem List
-https://www.acmicpc.net/problem/1697
 
 ### 2020/03/29 by PS-Master
 
 * 하 : [BOJ  1697](https://www.acmicpc.net/problem/1697) **숨바꼭질**
 * 중 : [BOJ 11404](https://www.acmicpc.net/problem/11404) **플로이드**
 * 상 : [BOJ  1753](https://www.acmicpc.net/problem/1753) **최단경로** : 다익스트라
-
 
 *****************************************************************************
 
