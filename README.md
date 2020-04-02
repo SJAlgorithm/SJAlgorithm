@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/04/02 by jochanmin
+
+* 하 : [BOJ 12869](https://www.acmicpc.net/problem/12869) **뮤탈리스크**
+* 중 : [BOJ 17141](https://www.acmicpc.net/problem/17141) **연구소2** 
+* 상 : [BOJ 5014](https://www.acmicpc.net/problem/5014) **스타트링크** 
+
+*****************************************************************************
+
 ### 2020/03/31 by notjustmoney
 
 * 하 : [BOJ 2022](https://www.acmicpc.net/problem/2022) **사다리**
