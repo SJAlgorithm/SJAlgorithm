@@ -29,7 +29,7 @@ void bfs() {
             
             if (nx >= 0 && nx < N && ny >= 0 && ny < M) {
                 if (arr[nx][ny] == 0) {
-                    q.push(pair<int, int>(nx, ny));
+                    q.push({nx, ny}));
                     arr[nx][ny] = arr[cx][cy] + 1;
                 }
             }
