@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/04/04 by c01d-br0th3r
+
+* 하 : [BOJ 11048](https://www.acmicpc.net/problem/11048) **이동하기**
+* 중 : [BOJ 11060](https://www.acmicpc.net/problem/11060) **점프 점프** 
+* 상 : [BOJ 15486](https://www.acmicpc.net/problem/15486) **퇴사 2** 
+
+*****************************************************************************
+
 ### 2020/04/02 by jochanmin
 
 * 하 : [BOJ 12869](https://www.acmicpc.net/problem/12869) **뮤탈리스크**
