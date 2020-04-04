@@ -3,14 +3,14 @@
 #include <cstring>
 #define INF 123456789
 using namespace std;
-int dp[61][61][61];
+int dp[61][61][61]; //scv체력에 대한 메모이제이션
 int n,a,b,c;
-int func(int x, int y, int z) {
+int func(int x, int y, int z) { // 
     if (!x&&!y&&!z)return 0;
     int &ret = dp[x][y][z];
     if (ret != -1)return ret;
     ret = INF;
-    ret = min(ret, func(max(0, x - 9), max(0, y - 3), max(0, z - 1)) + 1);
+    ret = min(ret, func(max(0, x - 9), max(0, y - 3), max(0, z - 1)) + 1);  //scv들의 체력을 깎을 수 있는 경우의 수가 6가지이므로 각 경우에 dp에 메모이제이션한 값에 따라 최솟값을 찾아낸다.
     ret = min(ret, func(max(0, x - 9), max(0, y - 1), max(0, z - 3)) + 1);
     ret = min(ret, func(max(0, x - 3), max(0, y - 9), max(0, z - 1)) + 1);
     ret = min(ret, func(max(0, x - 1), max(0, y - 9), max(0, z - 3)) + 1);
