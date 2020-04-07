@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/04/04 by 9mean^^
+
+* 하 : [BOJ 2251](https://www.acmicpc.net/problem/2251) **물통**
+* 중 : [BOJ 2163](https://www.acmicpc.net/problem/2163) **초콜렛 자르기** 
+* 상 : [BOJ 15989](https://www.acmicpc.net/problem/15989) **1,2,3 더하기 4** 
+
+*****************************************************************************
+
 ### 2020/04/04 by c01d-br0th3r
 
 * 하 : [BOJ 11048](https://www.acmicpc.net/problem/11048) **이동하기**
