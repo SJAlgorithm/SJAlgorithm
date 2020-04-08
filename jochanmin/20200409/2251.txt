@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+queue<pair<int,int>> q;
+vector<int> ans;
+bool check[201][201];
+void water(int x,int y){
+	if(!check[x][y]){
+		check[x][y]=true;
+		q.push({x,y});
+	}
+}
+int main() {
+	int a,b,c;
+	scanf("%d %d %d",&a,&b,&c);
+	check[0][0]=true;
+	q.push({0,0});
+	while(!q.empty()){
+		int x=q.front().first;
+		int y=q.front().second;
+		int z=c-x-y;
+		q.pop();
+		if(x==0)
+			ans.push_back(z);
+		int plus=min(x,b-y);
+		water(x-plus,y+plus);
+		
+		plus=min(x,c-z);
+		water(x-plus,y);
+		
+		plus=min(y,a-x);
+		water(x+plus,y-plus);
+		
+		plus=min(y,c-z);
+		water(x,y-plus);
+		
+		plus=min(z,a-x);
+		water(x+plus,y);
+		
+		plus=min(z,b-y);
+		water(x,y+plus);
+	}
+	sort(ans.begin(),ans.end());
+	for(int answer:ans)
+	 printf("%d ",answer);
+	printf("\n");
+	return 0;
+}
