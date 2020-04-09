@@ -4,7 +4,7 @@
 
 ### 2020/03/31 by notjustmoney
 
-* 하 : [BOJ 9461](https://www.acmicpc.net/problem/2022) **파도반 수열**
+* 하 : [BOJ 9461](https://www.acmicpc.net/problem/9461) **파도반 수열**
 * 중 : [BOJ 2225](https://www.acmicpc.net/problem/2225) **합분해**
 * 상 : [BOJ 2011](https://www.acmicpc.net/problem/2011) **암호코드** : DP
 
