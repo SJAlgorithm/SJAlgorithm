@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+int score[20];
+int dp[440][5001];
+bool flag;
+int n, m;
+int go(int s,int sum){
+	// printf("%d %d %d %d\n",s,n,m,sum);
+	if(sum==n){
+		flag=true;
+		return s;
+	}
+	int &ret=dp[s][sum];
+	if(ret!=-1)
+	 return ret;
+	ret=0;
+	for(int i=0;i<m;i++){
+		if(sum+s+score[i]<=n )
+		 ret=max(go(s+score[i],sum+s+score[i]),ret);
+	}
+	return ret;
+}
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--){
+		flag=false;
+		memset(dp,-1,sizeof(dp));
+		scanf("%d %d",&n,&m);
+		for(int i=0;i<m;i++)
+		 scanf("%d",&score[i]);
+		int ans=go(0,0);
+		if(flag)
+		 printf("%d\n",ans);
+		else
+		 printf("-1\n");
+	}
+	return 0;
+}
+ 
