@@ -12,13 +12,17 @@ vector<vector<pii>> g;
 bool vi[5001] = {false,};
 
 void dfs(int s, int curMU) {
+    int t = curMU;
     vi[s] = true;
     for(auto val : g[s]) {
+        curMU = t;
         if(!vi[val.first]) {
-            int t = curMU;
-            if(t > val.second) t = val.second;
-            if(t >= k) cnt++;
-            dfs(val.first,t);
+            curMU = min(curMU,val.second);
+            if(curMU >= k) {
+                cnt++;
+                dfs(val.first,curMU);
+            }
+            
         }
     }
 }
@@ -38,7 +42,7 @@ int main() {
     while(Q--){
         cin>>k>>v;
         cnt = 0;
-        memset(vi,false,N+1);
+        memset(vi,false,sizeof(vi));
         dfs(v,INF);
         cout<<cnt<<'\n';
     }
