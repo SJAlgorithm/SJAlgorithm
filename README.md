@@ -1,5 +1,37 @@
 # Solved Problem List
 
+### 2020/04/04 by 9mean^^
+
+* 하 : [BOJ 2251](https://www.acmicpc.net/problem/2251) **물통**
+* 중 : [BOJ 10564](https://www.acmicpc.net/problem/10564) **팔굽혀펴기** 
+* 상 : [BOJ 15989](https://www.acmicpc.net/problem/15989) **1,2,3 더하기 4** 
+
+*****************************************************************************
+
+### 2020/04/04 by c01d-br0th3r
+
+* 하 : [BOJ 11048](https://www.acmicpc.net/problem/11048) **이동하기**
+* 중 : [BOJ 11060](https://www.acmicpc.net/problem/11060) **점프 점프** 
+* 상 : [BOJ 15486](https://www.acmicpc.net/problem/15486) **퇴사 2** 
+
+*****************************************************************************
+
+### 2020/04/02 by jochanmin
+
+* 하 : [BOJ 12869](https://www.acmicpc.net/problem/12869) **뮤탈리스크**
+* 중 : [BOJ 17141](https://www.acmicpc.net/problem/17141) **연구소2** 
+* 상 : [BOJ 5014](https://www.acmicpc.net/problem/5014) **스타트링크** 
+
+*****************************************************************************
+
+### 2020/03/31 by notjustmoney
+
+* 하 : [BOJ 2022](https://www.acmicpc.net/problem/2022) **사다리**
+* 중 : [BOJ 14502](https://www.acmicpc.net/problem/14502) **연구소**
+* 상 : [BOJ 1520](https://www.acmicpc.net/problem/1520) **내리막길** : DP
+
+*****************************************************************************
+
 ### 2020/03/29 by PS-Master
 
 * 하 : [BOJ  1697](https://www.acmicpc.net/problem/1697) **숨바꼭질**
