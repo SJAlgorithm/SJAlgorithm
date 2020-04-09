@@ -1,18 +1,19 @@
 # Solved Problem List
+*****************************************************************************
 
 ### 2020/04/04 by c01d-br0th3r
 
 * 하 : [BOJ 11048](https://www.acmicpc.net/problem/11048) **이동하기**
-* 중 : [BOJ 11060](https://www.acmicpc.net/problem/11060) **점프 점프** 
-* 상 : [BOJ 15486](https://www.acmicpc.net/problem/15486) **퇴사 2** 
+* 중 : [BOJ 11060](https://www.acmicpc.net/problem/11060) **점프 점프**
+* 상 : [BOJ 15486](https://www.acmicpc.net/problem/15486) **퇴사 2**
 
 *****************************************************************************
 
 ### 2020/04/02 by jochanmin
 
 * 하 : [BOJ 12869](https://www.acmicpc.net/problem/12869) **뮤탈리스크**
-* 중 : [BOJ 17141](https://www.acmicpc.net/problem/17141) **연구소2** 
-* 상 : [BOJ 5014](https://www.acmicpc.net/problem/5014) **스타트링크** 
+* 중 : [BOJ 17141](https://www.acmicpc.net/problem/17141) **연구소2**
+* 상 : [BOJ 5014](https://www.acmicpc.net/problem/5014) **스타트링크**
 
 *****************************************************************************
 
@@ -82,7 +83,7 @@
 ### 2020/03/19 by notjustmoney
 * 하: [BOJ 1436](https://www.acmicpc.net/problem/1436) **영화감독 숌** : 브루트포스
 * 중: [BOJ 2805](https://www.acmicpc.net/problem/2805) **나무 자르기** : 이분탐색
-* 상: [BOJ 1260](https://www.acmicpc.net/problem/1260) **DFS와 BFS**   : DFS, BFS 
+* 상: [BOJ 1260](https://www.acmicpc.net/problem/1260) **DFS와 BFS**   : DFS, BFS
 
 *****************************************************************************
 
@@ -93,5 +94,3 @@
 * 상 : [BOJ_1620](https://www.acmicpc.net/problem/1620) **나는야 포켓몬 마스터 이다솜** : 이분탐색
 
 *****************************************************************************
-
-

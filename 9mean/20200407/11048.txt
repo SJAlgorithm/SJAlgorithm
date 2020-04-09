@@ -1,0 +1,33 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+int candy[1000][1000];
+int dp[1000][1000];
+int n,m,cnt=0;
+int func(int x,int y){
+	
+	if(x>n-1||y>m-1)
+		return 0;
+	if(x==n-1&&y==m-1)
+	 return candy[x][y];
+	
+	int &ret=dp[x][y];
+	if(ret!=-1)return ret;
+	ret=0;
+	ret=max(ret,func(x+1,y)+candy[x][y]);
+	ret=max(ret,func(x+1,y+1)+candy[x][y]);
+	ret=max(ret,func(x,y+1)+candy[x][y]);
+	return ret;
+}
+int main() {
+	memset(dp, -1, sizeof(dp));
+	scanf("%d%d",&n,&m);
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<m;j++)
+			scanf("%d",&candy[i][j]);
+	}
+	printf("%d",func(0,0));   
+	return 0;
+}
