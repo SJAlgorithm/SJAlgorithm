@@ -5,6 +5,7 @@ int wcnt;
 int bcnt;
 int N;	// 2, 4, 8, 16, 32, 64, 128
 int cnt;
+
 int check(int idx1, int idx2, int l){
 	int c = arr[idx1][idx2];
 	for(int i = 0; i < l; i++) {

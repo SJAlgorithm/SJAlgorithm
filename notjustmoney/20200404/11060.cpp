@@ -12,9 +12,9 @@ int main() {
 	for(int i = 1; i <= n; i++) {
 		if(dp[i] == 0) continue;
 		for(int j = 1; (j <= a[i]) && (i+j <= n); j++) {
-			if(dp[i+j]==0 || (dp[i]+1 < dp[i+j])) dp[i+j] = dp[i]+1;
+			if(!dp[i+j] || (dp[i]+1 < dp[i+j])) dp[i+j] = dp[i]+1;
 		}
-	}
+	}	
 	printf("%d\n", dp[n]-1);
 	
 	return 0;	

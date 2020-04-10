@@ -17,7 +17,7 @@ void bfs() {
 	copy(b, r);
 	int dy[4] = {0, 1, 0, -1};
 	int dx[4] = {1, 0, -1, 0};
-	int cnt = total-(wall+virus+3);
+	int cnt = total-(wall+3+virus);
 	queue<pair<int, int> > cq;
 	for(int i = 0; i < virus; i++) cq.push(q[i]);
 	while(!cq.empty()){
