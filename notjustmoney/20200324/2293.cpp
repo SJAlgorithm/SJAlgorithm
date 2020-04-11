@@ -7,13 +7,14 @@ int main() {
 	scanf("%d %d", &n, &k);
 	for(int i = 1; i <= n; i++) {
 		scanf("%d", c+i);
-		if(c[i] > k) {
+		if(c[i] > k) { 
 			n--;
 			i--;	
 		}
 	}
+	
 	s[0] = 1;
-	for(int i = 1; i <= n; i++) {
+	for(int i = 1; i <= n; i++) { // n은 동전의 개수 
 		for(int j = c[i]; j <= k; j++) {
 			s[j] += s[j-c[i]];	
 		}

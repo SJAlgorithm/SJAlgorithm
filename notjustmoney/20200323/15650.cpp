@@ -20,6 +20,5 @@ void dfs(int num, int cnt) {
 int main() {
 	scanf("%d %d", &N, &M);
 	dfs(1, 0);	
-	
 	return 0;	
 }

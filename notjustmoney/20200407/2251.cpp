@@ -3,6 +3,7 @@ using namespace std;
 int A, B, C;
 bool v[204][204][204];
 bool ans[204];
+int idx;
 int main() {
 	scanf("%d %d %d", &A, &B, &C);
 	queue<pair<int, int> > q;
@@ -12,7 +13,7 @@ int main() {
 		int abc[3] = {n.first, n.second, C-(n.first+n.second)};
 		if(v[abc[0]][abc[1]][abc[2]]) continue;
 		v[abc[0]][abc[1]][abc[2]] = true;
-		if(!abc[0]) ans[abc[2]] = true;
+		if(!abc[0]) { ans[abc[2]] = true; idx=abc[2]; }
 		
 		if(abc[0]+abc[1] <= B) q.push({0, abc[0]+abc[1]});
 		else q.push({abc[0]+abc[1]-B, B});
@@ -27,9 +28,7 @@ int main() {
 		if(abc[2]+abc[1] <= B) q.push({abc[0], abc[2]+abc[1]});
 		else q.push({abc[0], B});
 	}
-	for(int i=0; i<=200; i++) {
-		if(ans[i]) printf("%d ", i);	
-	}
+	printf("%d\n", idx);
 	printf("\n");
 	return 0;	
 }

@@ -1,12 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n, m, s[10], dp[5054];
-void go(int prev, int point) {
+int n, m, s[10], dp[5054], ans;
+void go(int total_pushup, int total_point) {
+	if(total_pushup ==n ) {
+		if(dp[total_pushup] < total_point) {
+			ans = total_point;
+			dp[total_pushup] = total_point;
+		}
+		return;	
+	}
 	for(int i=0; i<m; i++) {
-		int pal=prev+point+s[i];
-		if(pal>n || dp[pal]>(point+s[i])) continue;
-		dp[pal] = point+s[i]; 
-		go(pal, point+s[i]);
+		int new_pushup=total_pushup+(total_point+s[i]);
+		if(new_pushup>n || dp[new_pushup]>(total_point+s[i])) { continue; }
+		int ex=dp[new_pushup];
+		dp[new_pushup] = total_point+s[i]; 
+		go(new_pushup, total_point+s[i]);
+		if(new_pushup != n) dp[new_pushup]=ex;
 	}
 }
 
@@ -18,10 +27,10 @@ int main() {
 		scanf("%d %d", &n, &m);
 		for(int i=0; i<m; i++) {
 			scanf("%d", s+i);
-			dp[s[i]]=s[i];
 		}
-		for(int i=0; i<m; i++) 
+		for(int i=0; i<m; i++) {
 			go(s[i], s[i]);
+		}
 		if(dp[n]) printf("%d\n", dp[n]);
 		else printf("-1\n");
 	}

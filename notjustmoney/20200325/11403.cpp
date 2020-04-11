@@ -7,14 +7,12 @@ int main() {
 	for(int i = 0; i < N; i++) 
 	for(int j = 0; j < N; j++) 
 		scanf("%d", &G[i][j]);			
-	printf("\n");
 	for(int i = 0; i < N; i++) {
 		for(int j = 0; j < N; j++) {
 			bool p = false;
 			if(!G[i][j]) {
 				bool visited[N] = {false};
 				queue<int> q;
-				
 				q.push(i);
 				while(q.size()){
 					int V = q.front();
