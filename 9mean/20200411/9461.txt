@@ -1,0 +1,26 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+long long dp[101];
+long long p(int length){
+	dp[1]=1;
+	dp[2]=1;
+	dp[3]=1;
+	dp[4]=2;
+	dp[5]=2;
+	for(int i=6;i<=length;i++){
+		dp[i]=dp[i-1]+dp[i-5];
+	}
+	return dp[length];
+}
+int main() {
+	int t,triangle;
+	scanf("%d",&t);
+	for(int i=0;i<t;i++)
+	{
+		scanf("%d",&triangle);
+		printf("%lld\n",p(triangle));	
+	}
+	return 0;
+}
