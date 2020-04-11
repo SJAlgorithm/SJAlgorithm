@@ -1,3 +1,7 @@
+// "∆»±¡«Ù∆Ï±‚", https://www.acmicpc.net/problem/10564
+// writen in C++
+// 2020. 04.7
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, s[10], dp[5054], ans;

@@ -1,3 +1,7 @@
+// "1,2,3 ¥ı«œ±‚ 4", https://www.acmicpc.net/problem/15989
+// writen in C++
+// 2020. 04.09
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int dp[2][10004];

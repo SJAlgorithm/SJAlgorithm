@@ -1,3 +1,7 @@
+// "이동하기", https://www.acmicpc.net/problem/11048
+// writen in C++
+// 2020. 04.07
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int miro[1001][1001];

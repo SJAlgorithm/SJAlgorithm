@@ -1,3 +1,7 @@
+// "01≈∏¿œ", https://www.acmicpc.net/problem/1904
+// writen in C++
+// 2020. 04.04
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int dp[1000004];
