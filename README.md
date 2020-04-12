@@ -4,9 +4,7 @@
 
 ### 2020/04/14 by PS-Master
 
-<div style="margin:0">
 * 하 : [BOJ 3067](https://www.acmicpc.net/problem/3067) **Coins**
-</div>
 * 중 : [BOJ 10844](https://www.acmicpc.net/problem/10844) **쉬운 계단 수**
 * 상 : [BOJ 2600](https://www.acmicpc.net/problem/2600) **구슬게임**
     <details><summary>상[BOJ 2600] Hint</summary>
