@@ -2,6 +2,14 @@
 
 *****************************************************************************
 
+### 2020/04/14 by PS-Master
+
+* 하 : [BOJ 3067](https://www.acmicpc.net/problem/3067) **Coins**
+* 중 : [BOJ 10844](https://www.acmicpc.net/problem/10844) **쉬운 계단 수**
+* 상 : [BOJ 2600](https://www.acmicpc.net/problem/2600) **구슬게임**
+
+*****************************************************************************
+
 ### 2020/04/09 by notjustmoney
 
 * 하 : [BOJ 9461](https://www.acmicpc.net/problem/9461) **파도반 수열**
