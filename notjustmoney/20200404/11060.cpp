@@ -1,3 +1,7 @@
+// "점프점프", https://www.acmicpc.net/problem/11060
+// writen in C++
+// 2020. 04.04
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int a[1001];

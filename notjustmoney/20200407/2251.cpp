@@ -1,3 +1,7 @@
+// "π∞≈Î", https://www.acmicpc.net/problem/2251
+// writen in C++
+// 2020. 04.07
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int A, B, C;

@@ -1,3 +1,7 @@
+// "Επ»η2", https://www.acmicpc.net/problem/15486
+// writen in C++
+// 2020. 04.07
+// notjustmoney
 #include <bits/stdc++.h>
 using namespace std;
 int dp[1500004];
