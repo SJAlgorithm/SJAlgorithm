@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int coins[20];int n;
+int dp[10001][20];
+int go(int now,int prev){
+	if(now==0)
+	 return 1;
+	int &ret=dp[now][prev];
+	if(ret!=-1)
+	 return ret;
+	ret=0;
+	for(int i=0;i<=prev;i++){
+		if(now-coins[i]>=0)
+		 ret+=go(now-coins[i],i);
+	}
+	return ret;
+}
+int main() {
+	int t;
+	scanf("%d",&t);
+	while(t--){
+		memset(dp,-1,sizeof(dp));
+		scanf("%d",&n);
+		for(int i=0;i<n;i++)
+			scanf("%d",&coins[i]);
+		int goal;scanf("%d",&goal);
+		printf("%d\n",go(goal,n-1));
+	}
+	return 0;
+}
