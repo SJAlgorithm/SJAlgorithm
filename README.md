@@ -1,5 +1,12 @@
 # Solved Problem List
 
+### 2020/04/15 by jochanmin
+
+* 하 : [BOJ 11058](https://www.acmicpc.net/problem/11058) **크리보드**
+* 중 : [BOJ 10422](https://www.acmicpc.net/problem/10422) **괄호**
+* 상 : [BOJ 12969](https://www.acmicpc.net/problem/12969) **ABC**
+
+
 *****************************************************************************
 
 ### 2020/04/14 by PS-Master
