@@ -1,6 +1,6 @@
 # Solved Problem List
 
-### 2020/04/15 by jochanmin
+### 2020/04/16 by jochanmin
 
 * 하 : [BOJ 11058](https://www.acmicpc.net/problem/11058) **크리보드**
 * 중 : [BOJ 10422](https://www.acmicpc.net/problem/10422) **괄호**
