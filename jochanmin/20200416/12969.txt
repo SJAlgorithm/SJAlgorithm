@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+char ans[35];
+bool chk[436][31][31][31];
+int n,k;
+bool go(int N,int K,int a,int b){
+	if(n==N){
+		if(k==K) return true;
+		return false;
+	}
+	if(chk[K][N][a][b]) return false;
+	chk[K][N][a][b]=true;
+	
+	ans[N]='A';
+	if(go(N+1,K,a+1,b))
+		return true;
+	
+	ans[N]='B';
+	if(go(N+1,K+a,a,b+1))
+		return true;
+	
+	ans[N]='C';
+	if(go(N+1,K+a+b,a,b))
+	 return true;
+	 
+	return false;
+	 
+}
+int main() {
+	scanf("%d %d",&n,&k);
+	go(0,0,0,0) ? printf("%s",ans) : printf("-1");
+	
+	return 0;
+}
