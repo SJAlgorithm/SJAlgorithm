@@ -1,8 +1,15 @@
 # Solved Problem List
 
+### 2020/04/16 by jochanmin
+
+* 하 : [BOJ 11058](https://www.acmicpc.net/problem/11058) **크리보드**
+* 중 : [BOJ 10422](https://www.acmicpc.net/problem/10422) **괄호**
+* 상 : [BOJ 12969](https://www.acmicpc.net/problem/12969) **ABC**
+
+
 *****************************************************************************
 
-### 2020/04/14 by PS-Master
+### 2020/04/14 by TnJ
 
 * 하 : [BOJ 3067](https://www.acmicpc.net/problem/3067) **Coins**
 * 중 : [BOJ 10844](https://www.acmicpc.net/problem/10844) **쉬운 계단 수**
@@ -60,7 +67,7 @@
 
 *****************************************************************************
 
-### 2020/03/29 by PS-Master
+### 2020/03/29 by TnJ
 
 * 하 : [BOJ  1697](https://www.acmicpc.net/problem/1697) **숨바꼭질**
 * 중 : [BOJ 11404](https://www.acmicpc.net/problem/11404) **플로이드**
@@ -92,7 +99,7 @@
 
 *****************************************************************************
 
-### 2020/03/23 by PS-Master
+### 2020/03/23 by TnJ
 
 * 하 : [BOJ 15650](https://www.acmicpc.net/problem/15650) **N과M(2)** : 백트래킹
 * 중 : [BOJ 2630](https://www.acmicpc.net/problem/2630) **색종이 만들기** : 분할정복
@@ -122,7 +129,7 @@
 
 *****************************************************************************
 
-### 2020/03/18 by PS-Master
+### 2020/03/18 by TnJ
 
 * 하 : [BOJ_2231](https://www.acmicpc.net/problem/2231) **분해합** : 브루트포스
 * 중 : [BOJ_7568](https://www.acmicpc.net/problem/7568) **덩치** : 브루트포스

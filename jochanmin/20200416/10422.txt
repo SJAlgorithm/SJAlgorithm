@@ -1,0 +1,25 @@
+#include<iostream> 
+using namespace std; 
+#define mod 1000000007
+long long dp[2501];
+long long catalan(int n) 
+{ 
+    if (n <= 1) return 1; 
+    long long &ret=dp[n];
+    if(ret!=0)
+     return ret;
+    for (int i=0; i<n; i++) 
+        ret = (ret+catalan(i)*catalan(n-i-1))%mod; 
+    return ret; 
+} 
+int main() 
+{ 
+	dp[1]=1;
+	catalan(2500);
+   int t;scanf("%d",&t);
+    while(t--){
+        int n;scanf("%d",&n);
+        n%2==0 ? printf("%lld\n",dp[n/2]) : printf("0\n");
+    }
+    return 0; 
+} 

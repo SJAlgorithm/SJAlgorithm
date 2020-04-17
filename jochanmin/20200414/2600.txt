@@ -1,0 +1,14 @@
+#include <stdio.h>
+int A[3];
+bool D[555][555];
+int main()
+{
+    scanf("%d %d %d", A, A+1, A+2);
+    for(int i=0; i<=500; i++) for(int j=0; j<=500; j++) for(int p=0; p<3; p++)
+    {
+        int c = A[p];
+        if(i - c >= 0) {D[i][j] |= !D[i-c][j];}
+        if(j - c >= 0) {D[i][j] |= !D[i][j-c];}
+    }
+    for(int i=0, x, y; i<5; i++) scanf("%d %d", &x, &y), puts(D[x][y] ? "A" : "B");
+}

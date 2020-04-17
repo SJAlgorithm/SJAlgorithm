@@ -1,0 +1,27 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+int n,cnt,flag;
+long long dp[100];
+long long func(int here){
+	if(here==0) return 0;
+	dp[1]=1;
+	long long &ret=dp[here];
+	if(ret!=0) return ret;
+	ret=0;
+	ret=max(ret,func(here-1)+1);
+	if(here>=5){
+		ret=max(ret,func(here-3)*2);	
+		ret=max(ret,func(here-4)*3);
+		ret=max(ret,func(here-5)*4);
+	}
+	return ret;
+}
+int main() {
+	memset(dp, 0, sizeof(dp));
+	scanf("%d",&n);
+	printf("%ld\n",func(n));
+	return 0;
+}

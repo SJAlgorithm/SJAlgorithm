@@ -1,0 +1,29 @@
+#include cstdio
+#include algorithm
+#include cstring
+
+using namespace std;
+int coin[21],hap,n;
+int dp[10001];
+int main() {
+	int test;
+	scanf(%d,&test);
+	for(int i=0;itest;i++){
+		scanf(%d,&n);
+		for(int j=0;jn;j++){
+			scanf(%d,&coin[j]);	
+		}
+		scanf(%d,&hap);
+		dp[0]=1;
+			for(int j=0;jn;j++){
+		for(int here=coin[j];here=hap;here++){
+			dp[here]+=dp[here-coin[j]];
+		}
+	
+		}
+			printf(%dn,dp[hap]);
+			memset(dp, 0, sizeof(dp));
+	}
+	return 0;
+	
+}
