@@ -1,5 +1,14 @@
 # Solved Problem List
 
+### 2020/04/20 by jochanmin
+
+* 하 : [BOJ 16928](https://www.acmicpc.net/problem/16928) **뱀과 사다리 게임**
+* 중 : [BOJ 2156](https://www.acmicpc.net/problem/2156) **포도주 시식**
+* 상 : [BOJ 13913](https://www.acmicpc.net/problem/13913) **숨바꼭질!**
+
+
+*****************************************************************************
+
 ### 2020/04/16 by jochanmin
 
 * 하 : [BOJ 11058](https://www.acmicpc.net/problem/11058) **크리보드**
