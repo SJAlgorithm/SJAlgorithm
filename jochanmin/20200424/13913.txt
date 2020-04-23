@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool visit[200002];
+vector<pair<int,int>> path;
+int arr[200002];
+int main(){
+	int n,k;
+	scanf("%d %d",&n,&k);
+    if(n==k)
+        printf("0\n%d",n);
+	queue<pair<int,int>> q;
+	q.push({n,0});
+	visit[n]=true;
+	while(!q.empty()){
+		int size=q.size();
+		for(int i=0;i<size;i++){
+			int node=q.front().first;
+			int cnt=q.front().second;
+			q.pop();
+			int move[]={node+1,node-1,node*2};
+			for(int j=0;j<3;j++){
+				if(move[j]>=0 && move[j]<=100000 && !visit[move[j]]){
+					q.push({move[j],cnt+1});
+					arr[move[j]]=node;
+					visit[move[j]]=true;
+					if(move[j]==k){
+						printf("%d\n",cnt+1);
+						int tags=arr[k];
+						vector<int> ans;ans.push_back(k);
+						while(tags!=n){
+							ans.push_back(tags);
+							tags=arr[tags];
+						}
+						ans.push_back(n);
+						reverse(ans.begin(),ans.end());
+						for(auto p : ans) printf("%d ",p);
+						exit(0);
+					}
+				}
+			}
+		}
+	}
+}
