@@ -1,0 +1,47 @@
+#include <cstdio> 
+#include <algorithm> 
+#include <cstring>
+#include <queue>
+
+using namespace std;
+
+int n,m;
+int point[101];//사다리와 뱀을 하나의 역할로 생각해도되는문제
+int dp[101];
+int bfs(int here){
+	queue<int> q;
+	q.push(1);
+	dp[1]=0;
+	 while (!q.empty()) {
+        int x = q.front(); 
+        q.pop();
+        for (int i=1; i<=6; i++) {
+            int here = x+i;	
+            if (here > 100) continue;	
+            here = point[here];	
+            if (dp[here] == -1) { 
+                dp[here] = dp[x] + 1; 
+                q.push(here);
+            }
+        }
+    }
+    return dp[100];
+}
+int main() {
+	int x,y;
+	memset(dp, -1, sizeof(dp));
+	for(int i=1;i<=100;i++){
+		point[i]=i; //각 칸에 자신의 번호에 맞는 값 초기화
+	}
+	scanf("%d%d",&n,&m);
+	for(int i=0;i<n;i++){
+		scanf("%d%d",&x,&y);
+		point[x]=y;
+	}
+	for(int i=0;i<m;i++){
+		scanf("%d%d",&x,&y);
+		point[x]=y;
+	}
+	printf("%d\n",bfs(1));
+	return 0;
+}

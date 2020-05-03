@@ -1,0 +1,24 @@
+#include <cstdio> 
+#include <algorithm> 
+#include <cstring> 
+
+using namespace std;
+int n,wine[10001];
+int dp[10001];
+int func(int here) {
+    dp[1] = wine[1];
+    dp[2] = wine[1]+wine[2];
+    for (int i=3; i<=n; i++) {//i번째 잔까지 마셨을때 최대마실수있는 와인들의 합
+        dp[i] = dp[i-1];
+        dp[i] = max(dp[i], dp[i-2]+wine[i]);
+        dp[i] = max(dp[i], dp[i-3]+wine[i-1]+wine[i]);
+    }
+    return dp[n];
+}
+
+int main() {
+    scanf("%d", &n);
+    for (int i=1; i<=n; i++) scanf("%d", &wine[i]);
+     printf("%d\n", func(1));
+    return 0;
+}

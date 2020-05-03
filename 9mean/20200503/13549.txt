@@ -1,0 +1,41 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+#include <queue>
+bool visit[200001];
+int dp[200001];
+int n,k;
+using namespace std;
+int sbg(int goal){
+	queue<int> q;
+	q.push(n);
+	visit[n]=true;
+	while(!q.empty()){
+	
+		int here=q.front();
+		q.pop();
+		
+		if(here*2<100001&&!visit[here*2]){
+			q.push(here*2);
+			dp[here*2]=dp[here];
+			visit[here*2]=true;
+		}
+		if(here-1>=0&&!visit[here-1]){
+			q.push(here-1);
+			dp[here-1]=dp[here]+1;
+			visit[here-1]=true;
+		}
+		if(here+1<100001&&!visit[here+1]){
+			q.push(here+1);
+			dp[here+1]=dp[here]+1;
+			visit[here+1]=true;
+		}
+		
+	}
+ return dp[goal];
+}
+int main() {
+	scanf("%d%d",&n,&k);
+	printf("%d\n",sbg(k));
+	return 0;
+}

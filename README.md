@@ -1,5 +1,14 @@
 # Solved Problem List
 
+### 2020/04/25 by jochanmin
+
+* 하 : [BOJ 13549](https://www.acmicpc.net/problem/13549) **숨바꼭질3**
+* 중 : [BOJ 2206](https://www.acmicpc.net/problem/2206) **벽 부수고 이동하기**
+* 상 : [BOJ 14500](https://www.acmicpc.net/problem/14500) **테트로미노!**
+
+
+*****************************************************************************
+
 ### 2020/04/20 by jochanmin
 
 * 하 : [BOJ 16928](https://www.acmicpc.net/problem/16928) **뱀과 사다리 게임**
