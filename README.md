@@ -1,5 +1,11 @@
 # Solved Problem List
 
+### 2020/05/16 by jochanmin
+
+* 하 : [BOJ 1931 ](https://www.acmicpc.net/problem/1931 ) **회의실 **
+* 중 : [BOJ 1789](https://www.acmicpc.net/problem/1789) **수들의 합**
+* 상 : [BOJ 14241](https://www.acmicpc.net/problem/14241) **슬라임 합치기!**
+
 ### 2020/04/25 by jochanmin
 
 * 하 : [BOJ 13549](https://www.acmicpc.net/problem/13549) **숨바꼭질3**
