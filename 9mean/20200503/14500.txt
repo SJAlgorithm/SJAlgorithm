@@ -1,0 +1,68 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+ 
+int map[501][501];
+bool visit[501][501];
+int n,m;
+//방문한곳을 다시 방문할수 없게하려면 x,y방향배열 만들기
+int dx[] = {0,0,-1,1};
+int dy[] = {1,-1,0,0};
+ 
+//DFS를 할 수 있는 경우의 도형들
+int tetromino(int x, int y, int cnt){
+    if(cnt >= 5){
+        return 0;
+    }
+    int ans = 0;
+    for(int i = 0; i < 4; i++){
+        int nx = x + dx[i];
+        int ny = y + dy[i];
+        if(0<=nx && nx<n && 0<=ny && ny<m){
+            if(visit[nx][ny] == false){
+                visit[nx][ny] = true;
+                ans= max( ans, tetromino(nx, ny, cnt+1)+ map[x][y] );
+                visit[nx][ny] = false;//DFS로 거쳐갈 수 있으므로 다시 false처리
+            }
+        }
+    }
+    return ans;
+}
+//ㅗ모양은 DFS를 사용할 수 없으므로 따로 구해준다.
+int search(int x, int y){
+    int ans = 0;
+    // ㅓ모양
+    if(x>=1 && y>=1 && y<m-1)
+        ans = max(ans, map[x][y]+map[x-1][y]+map[x][y-1]+map[x][y+1]);
+    // ㅏ모양
+    if(x<n-1 && y>=1 && y<m-1)
+        ans = max(ans, map[x][y]+map[x+1][y]+map[x][y-1]+map[x][y+1]);
+    // ㅜ모양
+    if(x<n-1 && x>=1 && y<m-1)
+        ans = max(ans, map[x][y]+map[x+1][y]+map[x-1][y]+map[x][y+1]);
+    // ㅗ모양
+    if(x<n-1 && x>=1 && y>=1)
+        ans = max(ans, map[x][y]+map[x+1][y]+map[x-1][y]+map[x][y-1]);
+    return ans;
+}
+int main(){
+    scanf("%d %d", &n, &m);
+    
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            scanf("%d", &map[i][j]);
+        }
+    }
+    int ans = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            visit[i][j] = true;
+            ans = max(ans, search(i, j));
+            ans = max(ans, tetromino(i, j, 1));
+            visit[i][j] = false;//DFS로 거쳐갈 수 있으므로 다시 false처리
+        }
+    }
+    
+    printf("%d\n",ans);
+    return 0;
+}
