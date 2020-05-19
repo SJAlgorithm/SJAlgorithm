@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/05/21 by c01d-br0th3r
+
+* 하 : [BOJ 2823](https://www.acmicpc.net/problem/2823) **유턴 싫어**
+* 중 : [BOJ 1946](https://www.acmicpc.net/problem/1946) **신입 사원**
+* 상 : [BOJ 16236](https://www.acmicpc.net/problem/16236) **아기 상어**
+
+*****************************************************************************
+
 ### 2020/05/19 by jochanmin
 
 * 하 : [BOJ 1931](https://www.acmicpc.net/problem/1931) **회의실**
