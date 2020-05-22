@@ -34,4 +34,5 @@ int main() {
         }
     }
     cout<<cnt;
+    int a;
 }
