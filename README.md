@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/05/26 by TnJ
+
+* 하 : [BOJ 11508](https://www.acmicpc.net/problem/11508) **2+1 세일**
+* 중 : [BOJ 18230](https://www.acmicpc.net/problem/18230) **2xN 예쁜 타일링**
+* 상 : [BOJ 17086](https://www.acmicpc.net/problem/17086) **아기 상어2**
+
+*****************************************************************************
+
 ### 2020/05/21 by c01d-br0th3r
 
 * 하 : [BOJ 2823](https://www.acmicpc.net/problem/2823) **유턴 싫어**
