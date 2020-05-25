@@ -1,5 +1,7 @@
 // <아기상어 2> - BOJ_17086
-// bfs
+// bfs - 2가지 접근
+// 1. 빈칸으로 부터 상어까지
+// 2. 상어로부터 빈칸까지
 
 #include<bits/stdc++.h>
 using namespace std;
