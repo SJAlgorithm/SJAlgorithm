@@ -1,5 +1,13 @@
 # Solved Problem List
 
+### 2020/05/28 by Son
+
+* 하 : [BOJ 2792](https://www.acmicpc.net/problem/2792) **보석상자**
+* 중 : [BOJ 2138](https://www.acmicpc.net/problem/2138) **전구와 스위치**
+* 상 : [BOJ 17143](https://www.acmicpc.net/problem/17143) **낚시왕**
+
+*****************************************************************************
+
 ### 2020/05/26 by TnJ
 
 * 하 : [BOJ 11508](https://www.acmicpc.net/problem/11508) **2+1 세일**
