@@ -1,4 +1,12 @@
-# Solved Problem List
+# Problem-Solving List
+
+### 2020/06/29 by TnJ
+#### 삼성공채 코테 오후 2문제
+* 제한시간 : 3시간
+* 1번 : [BOJ 19238](https://www.acmicpc.net/problem/2792) **스타트 택시**
+* 2번 : [BOJ 19237](https://www.acmicpc.net/problem/2138) **어른 상어**
+
+*****************************************************************************
 
 ### 2020/05/28 by Son
 
