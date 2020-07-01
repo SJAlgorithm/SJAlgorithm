@@ -1,0 +1,118 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+
+int maxBlock,n;
+int board[21][21];
+
+using namespace std;
+
+void makeBoard(){
+	for(int i=0;i<n;i++)
+		for(int j=0;j<n;j++)
+			scanf("%d",&board[i][j]);
+	return;
+}
+
+void playGameBoard(int board[21][21],int playCnt){
+	if(playCnt>5) return;
+	bool canMix=true;
+	int map[21][21]={0};
+	int idx=0;
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			if(maxBlock<board[i][j]) maxBlock=board[i][j];
+		}
+	}
+	//왼
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			if(board[i][j]){
+				if (idx>0 && map[i][idx - 1] == board[i][j]&&canMix) {
+					map[i][idx - 1] += board[i][j];
+					canMix = false;
+				}
+				else {
+					map[i][idx] = board[i][j];
+					idx++;
+					canMix = true;
+				}
+			}
+		}
+		idx=0;
+	}
+	playGameBoard(map,playCnt+1);
+	//아래
+	idx = 0;
+	canMix = true;
+	memset(map, 0, sizeof(map));
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (board[n - 1 - j][i]) {
+				if (idx>0 && map[i][idx - 1] == board[n - 1 - j][i]&&canMix) {
+					map[i][idx - 1] += board[n - 1 - j][i];
+					canMix = false;
+				}
+				else {
+					map[i][idx] = board[n - 1 - j][i];
+					idx++;
+					canMix = true;
+				}
+			}
+		}
+		idx = 0;
+	}
+	playGameBoard(map,playCnt+1);
+	//오
+	idx = 0;
+	canMix = true;
+	memset(map, 0, sizeof(map));
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (board[i][n - 1 - j]) {
+				if (idx>0 && map[i][idx - 1] ==board[i][n - 1 - j]&&canMix) {
+					map[i][idx - 1] +=board[i][n - 1 - j];
+					canMix = false;
+				}
+				else {
+					map[i][idx] =board[i][n - 1 - j];
+					idx++;
+					canMix = true;
+				}
+			}
+		}
+		idx = 0;
+	}
+	playGameBoard(map,playCnt+1);
+
+	//위
+	idx = 0;
+	canMix = true;
+	memset(map, 0, sizeof(map));
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (board[j][n - 1 - i]) {
+				if (idx>0 && map[i][idx - 1] ==board[j][n - 1 - i]&&canMix) {
+					map[i][idx - 1] +=board[j][n - 1 - i];
+					canMix = false;
+				}
+				else {
+					map[i][idx] =board[j][n - 1 - i];
+					idx++;
+					canMix = true;
+				}
+			}
+		}
+		idx = 0;
+	}
+	playGameBoard(map,playCnt+1);
+	return;
+}
+
+int main() {
+	scanf("%d",&n);
+	makeBoard();
+	playGameBoard(board,0);
+	printf("%d",maxBlock);
+	return 0;
+}
