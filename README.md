@@ -1,8 +1,13 @@
 # Problem-Solving List
 
+### 2020/07/03 by Jochanmin
+####  프로그래머스 수행평가를 위한 예비연습
+* 1번 : [BOJ 16137](https://www.acmicpc.net/problem/16137) **견우와 직녀**
+* 2번 : [BOJ 3020](https://www.acmicpc.net/problem/3020) **개똥벌레**
+* 3번 : [BOJ 14496](https://www.acmicpc.net/problem/14496) **그대, 그머가 되어**
+
 ### 2020/06/31 by Jochanmin
 ####  프로그래머스 수행평가를 위한 예비연습
-* 제한시간 : **3시간**
 * 1번 : [BOJ 12100](https://www.acmicpc.net/problem/12100) **2048**
 * 2번 : [BOJ 1706](https://www.acmicpc.net/problem/1706) **크로스워드**
 * 3번 : [BOJ 9466](https://www.acmicpc.net/problem/9466) **텀 프로젝트**
