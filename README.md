@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/07/06 by TnJ
+####  프로그래머스 수행평가를 위한 예비연습
+* 1번 : [BOJ 1991](https://www.acmicpc.net/problem/1991) **트리 순회**
+* 2번 : [BOJ 5639](https://www.acmicpc.net/problem/5639) **이진 검색 트리**
+* 3번 : [BOJ 1238](https://www.acmicpc.net/problem/1238) **파티**
+
 ### 2020/07/03 by Jochanmin
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 16137](https://www.acmicpc.net/problem/16137) **견우와 직녀**
