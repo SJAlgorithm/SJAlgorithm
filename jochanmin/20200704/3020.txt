@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+// origin O(200000 * 500000)
+int arr[200000];
+int suk[100000];
+int jong[100000];
+int main() {
+	int n,h;
+	scanf("%d %d",&n,&h);
+	for(int i=0;i<n;i++){
+		if(i%2==0)
+			scanf("%d",&suk[i/2]);
+		else
+		 scanf("%d",&jong[i/2]);
+	}
+	sort(suk,suk+(n/2));
+	sort(jong,jong+(n/2));
+	int ret=500001;
+	vector<int> v;
+	int * dol1=lower_bound(suk,suk+(n/2),4);
+	for(int i=1;i<=h;i++){
+		int now=0;
+		int * dol1=lower_bound(suk,suk+(n/2),i);
+		int cnt=0;
+		if(dol1!=suk+n/2)
+			cnt=(suk+(n/2))-dol1;
+		dol1=lower_bound(jong,jong+(n/2),h-i+1);
+		if(dol1!=jong+n/2)
+			cnt+=jong+(n/2)-dol1;
+		if(cnt<ret){
+			ret=cnt;
+			v={};
+			v.push_back(cnt);
+		}else if(cnt==ret){
+			v.push_back(cnt);
+		}
+	}
+	printf("%d %d",ret,v.size());
+	return 0;
+}

@@ -1,0 +1,44 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+#include <queue>
+#include <vector>
+using namespace std;
+
+int a, b, n, m;
+vector<int> v[1001];
+int adj[1001];
+
+void bfs() {
+    queue<int> q;
+    q.push(a);
+    adj[a] = 0;
+    while (!q.empty()) {
+        int x = q.front(); q.pop();
+        if (x == b) {
+            printf("%d\n", adj[x]);
+            return;
+        }
+        for (int nx : v[x]) {
+            if (adj[nx] == -1) {
+                q.push(nx);
+                adj[nx] = adj[x]+1;
+            }
+        }
+    }
+    printf("-1\n");
+}
+
+int main() {
+    memset(adj, -1, sizeof(adj));
+    scanf("%d %d", &a, &b);
+    scanf("%d %d", &n, &m);
+    for (int i=0; i<m; i++) {
+        int x, y;
+        scanf("%d %d", &x, &y);
+        v[x].push_back(y);
+        v[y].push_back(x);
+    }
+    bfs();
+    return 0;
+}
