@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+
+using namespace std;
+int v[10001];
+int n = 0; 
+void postOrder(int a, int b) {
+    //현재 루트보다 큰 값을 찾고, 큰 값의 인덱스 전까지 배열을 다시 재귀호출
+    if (b == a) return;
+    
+    int root = v[a], idx = b;
+    for(int i = a; i < b; i++){
+        if (v[i] > root) {
+            idx = i;             // 루트보다 큰 값의 인덱스
+            break;
+        }
+    }
+    if (b - a > 1) {      // 원소가 두 개 이상일 때
+        postOrder(a + 1, idx);     // 왼쪽 서브트리
+        postOrder(idx, b);       // 오른쪽 서브트리
+    }
+    printf("%d\n", root);
+}
+int main() {
+    while (scanf("%d", &v[n++]) != -1);
+    postOrder(0, n - 1);
+}
