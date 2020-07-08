@@ -1,16 +1,25 @@
 # Problem-Solving List
 
+### 2020/07/11 by TnJ
+####  프로그래머스 수행평가를 위한 예비연습
+* 1번 : [BOJ 13424](https://www.acmicpc.net/problem/13424) **비밀 모임**
+* 2번 : [BOJ 5972](https://www.acmicpc.net/problem/5972) **택배 배송**
+* 3번 : [BOJ 1238](https://www.acmicpc.net/problem/1238) **파티**
+*****************************************************************************
+
 ### 2020/07/06 by TnJ
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 1991](https://www.acmicpc.net/problem/1991) **트리 순회**
 * 2번 : [BOJ 5639](https://www.acmicpc.net/problem/5639) **이진 검색 트리**
 * 3번 : [BOJ 1238](https://www.acmicpc.net/problem/1238) **파티**
+*****************************************************************************
 
 ### 2020/07/03 by Jochanmin
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 16137](https://www.acmicpc.net/problem/16137) **견우와 직녀**
 * 2번 : [BOJ 3020](https://www.acmicpc.net/problem/3020) **개똥벌레**
 * 3번 : [BOJ 14496](https://www.acmicpc.net/problem/14496) **그대, 그머가 되어**
+*****************************************************************************
 
 ### 2020/06/31 by Jochanmin
 ####  프로그래머스 수행평가를 위한 예비연습
