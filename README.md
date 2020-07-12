@@ -1,5 +1,12 @@
 # Problem-Solving List
 
+### 2020/07/14 by JoChanmin
+####  프로그래머스 수행평가를 위한 예비연습
+* 1번 : [BOJ 1300](https://www.acmicpc.net/problem/1300) **K번째 수**
+* 2번 : [BOJ 2660](https://www.acmicpc.net/problem/2660) **회장뽑기**
+* 3번 : [BOJ 2933](https://www.acmicpc.net/problem/2933) **미네랄**
+*****************************************************************************
+
 ### 2020/07/11 by TnJ
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 13424](https://www.acmicpc.net/problem/13424) **비밀 모임**
