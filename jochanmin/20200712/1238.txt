@@ -1,0 +1,69 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef pair<int,int> ii;
+typedef vector<ii> vii;
+const int INF=1e9;
+vii graph[1001];
+vii rgraph[1001];
+
+int n,m,x;
+
+void go(int start){
+	
+	vector<int> dist(n+1,INF);
+	vector<int> dist2(n+1,INF);
+	dist[start]=0;
+	// x->i
+	priority_queue<ii> pq;
+	pq.push({start,0});
+	while(!pq.empty()){
+		int current=pq.top().first;
+		int distance=-pq.top().second;
+		pq.pop();
+		if(dist[current]<distance) continue;
+		for(int i=0;i<graph[current].size();i++){
+			int next=graph[current][i].first;
+			int nextDistance=distance + graph[current][i].second;
+			if(nextDistance < dist[next]){
+				dist[next]=nextDistance;
+				pq.push({next,-nextDistance});
+			}
+		}
+	}
+	//i->x reverse
+	pq.push({start,0});
+	dist2[start]=0;
+	while(!pq.empty()){
+		int current=pq.top().first;
+		int distance=-pq.top().second;
+		pq.pop();
+		if(dist2[current]<distance) continue;
+		for(int i=0;i<rgraph[current].size();i++){
+			int next=rgraph[current][i].first;
+			int nextDistance=distance + rgraph[current][i].second;
+			if(nextDistance < dist2[next]){
+				dist2[next]=nextDistance;
+				pq.push({next,-nextDistance});
+			}
+		}
+	}
+	int ans=0;
+	for(int i=1;i<=n;i++){
+		int ret=dist[i]+dist2[i];
+		ans=max(ans,ret);
+	}
+	printf("%d\n",ans);
+}
+
+int main() {
+	scanf("%d %d %d",&n,&m,&x);
+	while(m--){
+		int a,b,c;
+		scanf("%d %d %d",&a,&b,&c);
+		graph[a].push_back({b,c});
+		rgraph[b].push_back({a,c});
+	}
+	go(x);
+	return 0;
+}

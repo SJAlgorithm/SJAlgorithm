@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef pair<int,int> ii;
+typedef vector<ii> vii;
+const int INF=1e9;
+vii graph[50001];
+
+void go(int start,vector<int> & dist){
+	dist[start]=0;
+	priority_queue<ii> pq;
+	pq.push({start,0});
+	while(!pq.empty()){
+		int current=pq.top().first;
+		int distance=-pq.top().second;
+		pq.pop();
+		if(dist[current]<distance) continue;
+		for(int i=0;i<graph[current].size();i++){
+			int next=graph[current][i].first;
+			int nextDistance=distance + graph[current][i].second;
+			if(nextDistance < dist[next]){
+				dist[next]=nextDistance;
+				pq.push({next,-nextDistance});
+			}
+		}
+	}
+}
+
+int main() {
+	int n,m;
+	scanf("%d %d",&n,&m);
+	vector<int> dist(n+1,INF);
+	while(m--){
+		int a,b,c;
+		scanf("%d %d %d",&a,&b,&c);
+		graph[a].push_back({b,c});
+		graph[b].push_back({a,c});
+	}
+	go(1,dist);
+	printf("%d",dist[n]);
+	return 0;
+}
