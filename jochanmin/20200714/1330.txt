@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,k;
+    int ans=0;
+    scanf("%d %d",&n,&k);
+    int left=1,right=k;
+    while(left<=right){
+        int mid=(left+right)>>1;
+        long long sum=0;
+        for(int i=1;i<=n;i++)
+            sum+=min(n,mid/i);
+        if(sum>=k){
+            right=mid-1;ans=mid;}
+        else left=mid+1;
+    }
+    printf("%d\n",ans);
+    return 0;
+}
