@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <algorithm>
+using namespace std;
+const int INF=9999;
+int n,l,r,f[51],d[51][51],flag=9999,cnt;
+
+void flowid(int start){
+
+	for(int k=1;k<=n;k++){
+		for(int i=1;i<=n;i++){
+			for(int j=1;j<=n;j++){
+				if(d[i][k]+d[k][j]<d[i][j])
+					d[i][j]=d[i][k]+d[k][j];
+					
+			}
+		}
+	}
+}
+void findMin(){
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=n;j++){
+			if(i==j) continue;
+			f[i]=max(f[i],d[i][j]);
+		}
+		flag=min(f[i],flag);
+	}
+}
+int findFirstCnt(){
+	for(int i=1;i<=n;i++){
+		if(flag==f[i]) cnt++;
+	}
+	return cnt;
+}
+int main() {
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+		for(int j=1;j<=n;j++){
+			d[i][j]=INF;
+		}
+	while(1){
+		scanf("%d %d",&l,&r);
+		if(l==-1&&r==-1) break;
+		d[l][r]=1;
+		d[r][l]=1;
+	}
+	flowid(0);
+	findMin();
+	printf("%d %d\n",flag,findFirstCnt());
+	for(int i=1;i<=n;i++)
+	 if(flag==f[i]) 
+		printf("%d ",i);
+	return 0;
+}
