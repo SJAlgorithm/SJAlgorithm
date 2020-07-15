@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <stack>
+
+using namespace std;
+
+
+int main() {
+	int n;
+	string str;
+	
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		stack<char>s;
+		scanf("%s",str); //aabb
+		for(int j=0;j<str.length();j++){
+			if(!s.empty()&&s.top()==str[j]) s.pop();  //aabb
+			else s.push(str[j]);	
+		}
+		if(s.empty()) cnt++;
+	}
+	printf("%d",cnt);
+	return 0;
+}

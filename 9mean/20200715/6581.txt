@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string word;
+    int lineSize = 0;
+    while (cin >> word)
+    {
+       if (word == "<br>")
+        {
+            cout << '\n';
+            lineSize = 0;
+            continue;
+        }
+        else if (word == "<hr>")
+        {
+           if (lineSize != 0)
+                cout << '\n';
+            cout << "--------------------------------------------------------------------------------\n";
+            lineSize = 0;
+            continue;
+        }
+        if (lineSize + word.size()  > 80)
+        {
+            cout << '\n';
+            lineSize = 0;
+        }
+        lineSize += word.size() + 1;
+        cout << word << ' ';
+    }
+}
+
