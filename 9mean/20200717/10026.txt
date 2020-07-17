@@ -1,0 +1,99 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include <cstring>
+#include <vector>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+typedef pair<int, int> pii;
+
+int n,ans1,ans2;
+
+char map[101][101];
+bool chk[101][101];
+
+int dx[4] = {0,1,0,-1};
+int dy[4] = {1,0,-1,0};
+
+void bfs(int r,int c,bool dyschromatopsia){
+    queue<pii> q;
+    q.push(pii(r,c));
+    chk[r][c] = true;
+    
+    while(!q.empty()){
+        int x = q.front().first;
+        int y = q.front().second;
+        q.pop();
+        
+        for(int i=0; i<4; i++){
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+            
+            if(nx<0 || nx>=n || ny<0 || ny>=n) continue;
+            
+            // 적록색약인 사람
+            if(dyschromatopsia){
+                if(map[r][c] == 'R' || map[r][c] == 'G'){
+                    if(!chk[nx][ny] && (map[nx][ny] == 'R' || map[nx][ny] == 'G')){
+                        q.push(pii(nx,ny));
+                        chk[nx][ny] = true;
+                    }
+                }else{
+                    if(!chk[nx][ny] && map[nx][ny] == 'B'){
+                        q.push(pii(nx,ny));
+                        chk[nx][ny] = true;
+                    }
+                }
+            }
+            // 적록색약이 아닌 사람
+            else{
+                if(!chk[nx][ny] && map[nx][ny] == map[r][c]){
+                    q.push(pii(nx,ny));
+                    chk[nx][ny] = true;
+                }
+            }
+        }
+    }
+}
+
+int main() {
+   
+    scanf("%d",&n);
+    getchar();
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+           scanf("%c",&map[i][j]);
+          
+        }
+        getchar();
+    }
+    
+    // 적록색약이 아닌 사람의 경우
+    memset(chk, false, sizeof(chk));
+    ans1 = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(!chk[i][j]){
+                bfs(i,j,false);
+                ans1++;
+            }
+        }
+    }
+    
+    // 적록색약인 사람의 경우
+    memset(chk, false, sizeof(chk));
+    ans2 = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(!chk[i][j]){
+                bfs(i,j,true);
+                ans2++;
+            }
+        }
+    }
+    
+    printf("%d %d",ans1,ans2);
+}
