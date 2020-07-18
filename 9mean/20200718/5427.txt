@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <algorithm>
+#include <cstring>
+#include <queue>
+#include <vector>
+
+using namespace std;
+
+int w,h,cnt;
+char b[1001][1001];
+bool v[1001][1001];
+queue<pair<int,int>> sq;
+queue<pair<int,int>> fq;
+
+int dx[]={0,0,1,-1};
+int dy[]={1,-1,0,0};
+
+bool bfs(){
+	cnt=0;
+	while(!sq.empty()){
+		int fqsize=fq.size();
+		int sqsize=sq.size();
+		int x,y,qx,qy;
+		cnt++;
+		
+		while(fqsize--){
+			x=fq.front().first;
+			y=fq.front().second;
+			
+			fq.pop();
+			for(int i=0;i<4;i++){
+				qx=x+dx[i];
+				qy=y+dy[i];
+				if(qx<0||qy<0||qx>=h||qy>=w) continue;
+				if(b[qx][qy]=='#') continue;
+				if(v[qx][qy]) continue;
+				fq.push({qx,qy});
+			
+				v[qx][qy]=true;
+			}
+		}
+		while(sqsize--){
+			x=sq.front().first;
+			y=sq.front().second;
+			sq.pop();
+			for(int i=0;i<4;i++){
+				qx=x+dx[i];
+				qy=y+dy[i];
+				if(qx<0||qy<0||qx>=h||qy>=w){ 
+					return true;
+				}
+				if(b[qx][qy]=='#') continue;
+				if(v[qx][qy]) continue;
+				sq.push({qx,qy});
+				
+				v[qx][qy]=true;
+			}
+		}
+		
+	}
+
+	return false;
+}
+int main()
+{
+	int t;
+	scanf("%d",&t);
+	while(t--){
+		memset(v,false,sizeof(v));
+		memset(b,0,sizeof(b));
+		while(!fq.empty()) fq.pop();
+		while(!sq.empty()) sq.pop();
+	
+		scanf("%d%d",&w,&h);
+		getchar();
+		for(int i=0;i<h;i++){
+			for(int j=0;j<w;j++){
+				scanf("%c",&b[i][j]);
+				
+				if(b[i][j]=='@'){
+					sq.push({i,j});
+					b[i][j]='.';
+					v[i][j]=true;
+				}
+				else if(b[i][j]=='*'){
+					fq.push({i,j});
+					v[i][j]=true;
+				}
+			}
+			getchar();
+		}
+		
+		bool flag=bfs();
+		flag ? printf("%d\n",cnt):printf("IMPOSSIBLE\n");
+	}
+}
