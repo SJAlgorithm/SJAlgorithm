@@ -1,5 +1,12 @@
 # Problem-Solving List
 
+### 2020/07/20 by JoChanmin
+####  프로그래머스 수행평가를 위한 예비연습
+* 1번 : [BOJ 1937](https://www.acmicpc.net/problem/1937) **욕심쟁이 판다**
+* 2번 : [BOJ 15685](https://www.acmicpc.net/problem/15685) **드래곤 커브**
+* 3번 : [BOJ 2437](https://www.acmicpc.net/problem/2437) **저울**
+*****************************************************************************
+
 ### 2020/07/16 by JoChanmin
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 5427](https://www.acmicpc.net/problem/5427) **불**
