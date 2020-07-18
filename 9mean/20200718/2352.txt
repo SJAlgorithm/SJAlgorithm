@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <algorithm>
+
+using namespace std;
+int n,p[40001],d[40001];
+int findMax(){
+	d[1]=p[1];
+	int len=1;
+	for(int i=2;i<=n;i++){
+		int cur=p[i];
+		if(d[len]<cur){
+			len++;
+			d[len]=p[i];
+			continue;
+		}
+		int flag=lower_bound(d+1,d+len+1,cur)-d;
+		d[flag]=p[i];
+	}
+	return len;
+}
+int main() {
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++) scanf("%d",&p[i]);
+	printf("%d",findMax());
+	return 0;
+}
