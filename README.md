@@ -17,7 +17,7 @@
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 5427](https://www.acmicpc.net/problem/5427) **불**
 * 2번 : [BOJ 2412](https://www.acmicpc.net/problem/2412) **암벽 등반**
-* 3번 : [BOJ 2352](https://www.acmicpc.net/problem/2352) **반도체 **
+* 3번 : [BOJ 2352](https://www.acmicpc.net/problem/2352) **반도체**
 *****************************************************************************
 
 ### 2020/07/14 by JoChanmin
