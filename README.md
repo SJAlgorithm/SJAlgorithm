@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/07/28 by TnJ
+* 1번 : [BOJ 2568](https://www.acmicpc.net/problem/2568) **전깃줄 - 2**
+* 2번 : [BOJ 11066](https://www.acmicpc.net/problem/11066) **파일 합치기**
+* 3번 : [BOJ 1846](https://www.acmicpc.net/problem/1846) **장기**
+*****************************************************************************
+
 ### 2020/07/20 by JoChanmin
 ####  프로그래머스 수행평가를 위한 예비연습
 * 1번 : [BOJ 1937](https://www.acmicpc.net/problem/1937) **욕심쟁이 판다**
