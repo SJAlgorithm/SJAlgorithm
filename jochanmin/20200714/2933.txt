@@ -1,0 +1,151 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+const int MAX = 100;
+
+int dx[4]={0,1,-1,0};
+int dy[4]={-1,0,0,1};
+int R, C;
+int N;
+
+bool flag;
+bool visited[MAX][MAX];
+vector<pair<int, int>> cluster;
+char graph[MAX][MAX];
+
+void DFS(int y, int x)
+{
+	if (y == R - 1)
+	{
+		flag = true;
+		return;
+	}
+	for (int k = 0; k < 4; k++)
+	{
+		
+		int nx = x + dx[k];
+		int ny = y + dy[k];
+		if (ny < 0 || ny >= R || nx < 0 || nx >= C || visited[ny][nx])
+			continue;
+
+		if (graph[ny][nx] == '.')
+			continue;
+
+		visited[ny][nx] = true;
+		cluster.push_back({ ny, nx });
+		DFS(ny, nx);
+	}
+}
+
+int main(void)
+{
+	scanf("%d %d\n",&R,&C);
+	for (int i = 0; i < R; i++)
+		{
+			for(int j=0;j<C;j++)
+				scanf("%c",&graph[i][j]);
+			getchar();
+		}
+	
+	scanf("%d",&N);
+	vector<int> stick(N);
+	
+	for (int i = 0; i < N; i++)
+		scanf("%d",&stick[i]);
+
+	for (int i = 0; i < stick.size(); i++)
+	{
+		int y = R - stick[i];
+		int x = -1;
+
+		if (i % 2 == 0)
+		{
+			for (int j = 0; j < C; j++)
+			{
+				if (graph[y][j] == 'x')
+				{
+					x = j;
+					break;
+				}
+			}
+		}
+		else
+		{
+			for (int j = C - 1; j >= 0; j--)
+			{
+				if (graph[y][j] == 'x')
+				{
+					x = j;
+					break;
+				}
+			}
+		}
+
+		// 부실 미네랄이 없다면
+		if (x == -1)
+			continue;
+
+		graph[y][x] = '.';
+
+		for (int k = 0; k < 4; k++)
+		{
+			int nx = x + dx[k];
+			int ny = y + dy[k];
+
+			if (ny < 0 || ny >= R || nx < 0 || nx >= C)
+				continue;
+
+			if (graph[ny][nx] == '.')
+				continue;
+
+			memset(visited, false, sizeof(visited));
+			cluster.clear();
+			flag = false;
+
+			cluster.push_back({ ny, nx });
+			visited[ny][nx] = true;
+			DFS(ny, nx);
+
+			// 클러스터 구성원 중 하나라도 바닥에 닿아있다면
+			if (flag)
+				continue;
+
+			// 바닥에 닿을 때까지 한 칸씩 아래로
+			while (1)
+			{
+				bool down = true;
+				for (int j = 0; j < cluster.size(); j++)
+					graph[cluster[j].first][cluster[j].second] = '.';				
+				for (int j = 0; j < cluster.size(); j++)
+				{
+					int y = cluster[j].first + 1;
+					int x = cluster[j].second;
+
+					if (y == R || graph[y][x] == 'x')
+					{
+						down = false;
+						break;
+					}
+				}
+
+				for (int j = 0; j < cluster.size(); j++)
+				{
+					if (down)
+						cluster[j].first++;
+					graph[cluster[j].first][cluster[j].second] = 'x';
+				}
+
+				if (!down)
+					break;
+			}
+		}
+	}
+
+	for (int i = 0; i < R; i++){
+		for(int j=0;j<C;j++){
+			printf("%c",graph[i][j]);
+		}
+		printf("\n");
+}
+	return 0;
+}

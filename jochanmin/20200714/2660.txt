@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define INF 1e9
+int main() {
+  int g[51][51];
+  vector<int> pr_num;
+  int n;
+  scanf("%d",&n);
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=n;j++){
+      g[i][j]=INF;
+    }
+  }
+ while(1){
+   int a,b;
+   scanf("%d %d",&a,&b);
+   if(a==-1 && b==-1)
+    break;
+   g[a][b]=1;
+   g[b][a]=1;
+  }
+ 
+  for(int k=1;k<=n;k++){
+    for(int i=1;i<=n;i++){
+      for(int j=1;j<=n;j++){
+        // 친구면 안되고
+        if(g[i][j]>g[i][k]+g[k][j]){
+          g[i][j]=g[i][k]+g[k][j];
+        }
+      }
+    }
+  }
+  for(int i=1;i<=n;i++)
+   g[i][i]=0;
+  int rHigh=1e9;
+  for(int i=1;i<=n;i++){
+    int highVal=0;
+    for(int j=1;j<=n;j++){
+      if(g[i][j]>highVal)
+       highVal=g[i][j];
+    }
+    if(rHigh>highVal){
+      rHigh=highVal;
+    }
+  }
+  for(int i=1;i<=n;i++){
+    bool flag=false;
+    for(int j=1;j<=n;j++){
+      if(g[i][j]>rHigh)
+        flag=true;
+    }
+    if(!flag){
+      pr_num.push_back(i);
+    }
+  }
+  printf("%d %d\n",rHigh,pr_num.size());
+  for(auto &p :pr_num){
+    printf("%d ",p);
+  }
+}

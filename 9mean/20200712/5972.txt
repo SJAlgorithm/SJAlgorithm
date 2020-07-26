@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <algorithm>
+#include <vector>
+#include <queue>
+#include <utility>
+
+using namespace std;
+
+int n,m,INF=123456789;
+int d[50001]; //1번 정점으로부터의 최소거리 배열
+typedef pair<int, int> pii;
+
+vector<pii> path[50001]; //path[ from ] (to, value) 를 담은 벡터
+
+void dijkstra(int start){
+	d[start]=0; //자기자신까지의 거리는 0
+	priority_queue<pii> pq;
+	pq.push(pii(start, 0));
+
+	while(!pq.empty()){
+		int cur=pq.top().first;
+		int distance= -pq.top().second; //거리를 음수화해서 최소힙구조 만들기
+		pq.pop();
+		
+		if(d[cur]<distance) continue; //이미 최소거리가 있다면 다음 정점으로!
+		for(int i=0; i<path[cur].size();i++){
+			int next=path[cur][i].first;
+			int nextDistance=path[cur][i].second+distance;
+		
+			if(nextDistance<d[next]){
+				d[next]=nextDistance;
+				pq.push(pii(next,-nextDistance));
+			}
+		}
+	}
+}
+int main() {
+	scanf("%d%d",&n,&m);
+	for(int i=1;i<=n;i++){
+		d[i]=INF;
+	}
+	for(int i=0;i<m;i++){
+		int a,b,cow;
+		scanf("%d %d %d",&a,&b,&cow);
+		path[a].push_back(pii(b,cow));
+		path[b].push_back(pii(a,cow));
+	}
+	dijkstra(1);
+	printf("%d",d[n]); 
+	return 0;
+}

@@ -1,0 +1,59 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+const int INF=1e9;
+typedef pair<int,int> ii;
+typedef vector<ii> vii;
+
+int main() {
+	int t;scanf("%d",&t);
+	while(t--){
+		int n,m;
+		scanf("%d %d",&n,&m);
+		vii graph[101];
+		while(m--){
+			int a,b,c;
+			scanf("%d %d %d",&a,&b,&c);
+			graph[a].push_back({b,c});
+			graph[b].push_back({a,c});
+		}
+		int k,f;
+		scanf("%d",&k);
+		int ans[n+1]={0};
+		for(int i=0;i<k;i++){
+			scanf("%d",&f);
+			bool visited[n+1]={false,};
+			vector<int> dist(n+1,INF);
+			dist[f]=0;
+			
+			priority_queue<ii> pq;
+			pq.push({0,f});
+			while(!pq.empty()){
+				int cur=pq.top().second;
+				pq.pop();
+				if(visited[cur]) continue;
+				visited[cur]=1;
+				for(int j=0;j<graph[cur].size();j++){
+					ii p=graph[cur][j];
+					int next=p.first;
+					int d=p.second;
+					if(dist[next]>dist[cur]+d){
+						dist[next]=dist[cur]+d;
+						pq.push({-dist[next],next});
+					}
+				}
+			}
+			for(int i=0;i<=n;i++){
+				ans[i]+=dist[i];
+			}
+		}
+		int ret=INF,ret_idx=1;
+		for(int i=1;i<=n;i++){
+			if(ret>ans[i]){
+				ret=ans[i];
+				ret_idx=i;
+			}
+		}
+		printf("%d\n",ret_idx);
+	}
+}
