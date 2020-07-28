@@ -1,5 +1,12 @@
 # Problem-Solving List
 
+### 2020/07/30 by TnJ
+* 1번 : [BOJ 9251](https://www.acmicpc.net/problem/9251) **LCS**
+* 2번 : [BOJ 9252](https://www.acmicpc.net/problem/9252) **LCS2**
+* 3번 : [BOJ 4256](https://www.acmicpc.net/problem/4256) **트리**
+* 4번 : [BOJ 11066](https://www.acmicpc.net/problem/11066) **파일 합치기**
+*****************************************************************************
+
 ### 2020/07/28 by TnJ
 * 1번 : [BOJ 2568](https://www.acmicpc.net/problem/2568) **전깃줄 - 2**
 * 2번 : [BOJ 11066](https://www.acmicpc.net/problem/11066) **파일 합치기**
