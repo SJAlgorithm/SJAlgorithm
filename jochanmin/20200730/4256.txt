@@ -1,0 +1,29 @@
+#includebitsstdc++.h
+int pre[1001],in[1001];
+void go(int i,int s,int e){
+	if(se)
+	 return;
+	if(s==e){
+		printf(%d ,pre[i]);
+		return;
+	}
+	int tmp=in[pre[i]];
+	go(i+1,s,tmp-1);
+	go(i + tmp - s + 1, tmp + 1, e);  시작점과 tmp 왼쪽 노드의 갯수만큼 뺴고 다음으로 감 
+	printf(%d ,pre[i]);
+}
+int main(){
+	int t;scanf(%d,&t);
+	while(t--){
+		int n;scanf(%d,&n);
+		for(int i=1;i=n;i++)
+		 scanf(%d,&pre[i]);
+		for(int i=1;i=n;i++)
+		 {
+		 	int num;scanf(%d,&num);
+		 	in[num]=i;
+		 }
+		 go(1,1,n);printf(n);
+	}
+	return 0;
+}
