@@ -1,0 +1,43 @@
+#include <iostream>
+#include<cstring>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int map[1002][1002];
+int main() {
+	char s1[1002],s2[1002];
+	scanf("%s %s",s1,s2);
+	int len1=strlen(s1),len2=strlen(s2);
+	int one=0,two=0;
+    char ret[1002];int k=0;
+	for(int i=1;i<=len1;i++){
+		for(int j=1;j<=len2;j++){
+			if(s1[i-1]==s2[j-1]){
+				map[i][j]=map[i-1][j-1]+1;
+				one=map[i][j];
+			}
+			else
+				map[i][j]=max(map[i-1][j],map[i][j-1]);
+		}
+        if(one>two)
+            two=one;
+	}
+	printf("%d\n",two);
+    int j=len2;
+    int i=len1;
+    while(map[i][j]){
+    	if(map[i][j]==map[i-1][j-1]+1 && map[i][j] == map[i-1][j]+1 && map[i][j]==map[i][j-1]+1){
+    		ret[k++]=s1[i-1];
+    		i--;j--;
+    	}
+    	else{
+    		if(map[i][j-1]>map[i-1][j])
+    		 j--;
+    		else
+    		 i--;
+    	}
+    }
+    for(int i=k-1;i>=0;i--)
+     printf("%c",ret[i]);
+	return 0;
+}
