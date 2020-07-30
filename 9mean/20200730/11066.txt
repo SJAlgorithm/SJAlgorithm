@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+
+
+int dp[501][501];
+int f[501];
+int sum[501];
+
+int func(int s, int e){
+	if (s >= e) return 0;
+
+	if (dp[s][e] != -1) return dp[s][e];
+	if (e == s + 1) return f[s] + f[e];
+
+	dp[s][e] = 123456789;
+	for (int i = s; i <= e; i++){
+		int tmp = func(s, i) + func(i + 1, e) + sum[e] - sum[s - 1];
+		dp[s][e] = min(dp[s][e], tmp);
+	}
+	return dp[s][e];
+}
+
+int main(){
+
+
+	int t;
+	scanf("%d",&t);	
+	while (t--){
+		int n;
+		scanf("%d",&n);
+		for (int i = 1; i <= n; i++){
+		scanf("%d",&f[i]);
+			sum[i] = sum[i - 1] + f[i];
+		}
+		for (int i = 1; i <= n; i++){
+			for (int j = 1; j <= n; j++){
+				dp[i][j] = -1;
+			}
+		}
+	printf("%d\n",func(1, n) );
+	}
+	return 0;
+}
