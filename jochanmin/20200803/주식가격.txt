@@ -1,0 +1,19 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(vector<int> prices) {
+    vector<int> answer;
+    int len=prices.size();
+    for(int i=0;i<len;i++){
+        int price=0;
+        for(int j=i+1;j<len;j++){
+         price++;
+            if(prices[i]>prices[j])
+                break;
+        }
+        answer.push_back(price);
+    }
+    return answer;
+}

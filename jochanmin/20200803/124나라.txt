@@ -1,0 +1,18 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+string solution(int n) {
+    string q="412";
+    int a;
+    string answer = "";
+    while(n){
+        a=n%3;
+        n/=3;
+        if(!a)
+             n--;
+        answer=q[a]+answer;
+    }
+    return answer;
+}
