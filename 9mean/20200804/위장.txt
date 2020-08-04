@@ -1,0 +1,24 @@
+#include <string>
+#include <vector>
+using namespace std;
+
+int v[31],a[31];
+int solution(vector<vector<string>> clothes) {
+    int answer = 1;
+    int size=clothes.size();
+  
+    for(int i=0;i<size;i++){
+        if(v[i]) continue;
+        for(int j=i;j<size;j++){
+            if(clothes[i][1]==clothes[j][1]) {
+               v[j]=1;
+               a[i]++;
+            }
+        }
+    }
+    for(int i=0;i<size;i++){
+        if(a[i]) answer*=(a[i]+1);
+    }
+    answer--;
+    return answer;
+}

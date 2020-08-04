@@ -1,0 +1,46 @@
+#include <vector>
+#include <queue>
+ 
+using namespace std;
+ 
+int solution(int bridge_length, int weight, vector<int> truck_weights) {
+    //현재 도로에 올라가져있는 차 무게
+    int answer = 0, currentWeight = 0;
+    //도로에 올라가져있는차, 차마다 남은 거리
+    queue<int> count, bridgeOn;
+    while (true) {
+        //중간에 차가 빠져나가면 계산이 바뀌기때문에 size고정
+        int size = bridgeOn.size();
+        for (int i = 0; i < size; i++){
+            int length = bridgeOn.front();
+            bridgeOn.pop();
+            //도로 남은길이가 없다면
+            if (length <= 1) {
+                //도로에서 현재차 무게를 제외
+                currentWeight -= count.front();
+                //도로에 올라가져 있는차 제외
+                count.pop();
+                continue;
+            }
+            //남아있다면 길이감소후 다시넣기
+            bridgeOn.push(length - 1);
+        }
+        //대기차가 1대이상 있고 도로가 무게를 견딜 수 있다면
+        if (truck_weights.size() > 0 && currentWeight + truck_weights.at(0) <= weight) {
+            //도로에 올라가져있는 차 추가
+            count.push(truck_weights.at(0));
+            //현재 올라가져있는 무게 추가
+            currentWeight += truck_weights.at(0);
+            //남은 도로거리 추가
+            bridgeOn.push(bridge_length);
+            //대기차량 삭제
+            truck_weights.erase(truck_weights.begin());
+        }
+        //시간초 증가
+        answer++;
+        //도로에 올라가져있는차와 대기차가 모두없다면 반복문 탈출
+        if (truck_weights.size() == 0 && count.size() == 0)
+            break;
+    }
+    return answer;
+}
