@@ -1,0 +1,19 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int solution(vector<int> citations) {
+    int answer = 0;
+    int size=citations.size();
+    sort(citations.begin(),citations.end());
+    for(int i=1;i<=10000;i++){    
+        for(int j=0;j<size;j++){
+            if(citations[j]>=i && size-j>=i && j<=i){
+                answer=i;
+                break;
+            }
+        }
+    }
+    return answer;
+}
