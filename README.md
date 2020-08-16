@@ -1,6 +1,6 @@
 # Problem-Solving List
 
-### 2020/08/03 by Programmers
+### 2020/08/18 by Programmers
 * 1번 : https://programmers.co.kr/learn/courses/30/lessons/12905
 * 2번 : https://programmers.co.kr/learn/courses/30/lessons/42577
 * 3번 : https://programmers.co.kr/learn/courses/30/lessons/42747
