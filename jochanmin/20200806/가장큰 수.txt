@@ -1,0 +1,19 @@
+#include <string>
+#include <vector>
+#include<algorithm>
+using namespace std;
+bool desc(string a, string b){
+    return a+b > b+a;
+}
+string solution(vector<int> numbers) {
+    string answer="";
+    vector<string> num;
+    for(auto &p:numbers){
+        num.push_back(to_string(p));
+    }
+    sort(num.begin(),num.end(),desc);
+    if(num[0]=="0") return "0";
+    for(auto a:num)
+        answer+=a;
+    return answer;
+}
