@@ -1,0 +1,20 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+bool solution(vector<string> phone_book) {
+    bool answer = true;
+    int n = phone_book.size();
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){ //비교대상 탐색
+            if(i!=j){  //자기자신(i)은 제외
+                if(phone_book[i].size()<phone_book[j].size()){//i의 길이가 더 길면 i가 접두어가 될 수 없으므로 짧거나 같을때만 비교
+                    string s = phone_book[j].substr(0,phone_book[i].size());
+                    if(s==phone_book[i]) return false; //존재하므로 false 리턴
+                }
+            }
+        }
+    }
+    return answer;
+}
