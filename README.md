@@ -1,5 +1,15 @@
 # Problem-Solving List
 
+### 2020/08/20 by Programmers
+* 1번 : https://programmers.co.kr/learn/courses/30/lessons/12939
+* 2번 : https://programmers.co.kr/learn/courses/30/lessons/62048
+* 3번 : https://programmers.co.kr/learn/courses/30/lessons/12913
+* 4번 : https://programmers.co.kr/learn/courses/30/lessons/12911
+* 5번 : https://programmers.co.kr/learn/courses/30/lessons/17680
+* 6번 : https://programmers.co.kr/learn/courses/30/lessons/12949
+* 7번 : https://programmers.co.kr/learn/courses/30/lessons/42842
+*****************************************************************************
+
 ### 2020/08/18 by Programmers
 * 1번 : https://programmers.co.kr/learn/courses/30/lessons/12905
 * 2번 : https://programmers.co.kr/learn/courses/30/lessons/42577
