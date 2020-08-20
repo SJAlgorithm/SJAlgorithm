@@ -1,0 +1,17 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(int brown, int yellow) {
+    vector<int> answer;
+    for(int x=3;x<=brown;x++){
+        int y=(brown-x*2)/2;
+        if(yellow==(x-2)*(y)){
+            answer.push_back(y+2);
+            answer.push_back(x);
+            break;
+        }
+    }
+    return answer;
+}
