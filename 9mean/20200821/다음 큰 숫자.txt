@@ -1,0 +1,39 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int solution(int n) {
+    int answer = 0;
+    int num2=0,cnt1=0,cnt2=0,mok=1,nmg,k=0;
+	num2=n;
+	do{
+		
+		mok = num2/2;
+		nmg = num2-mok*2;
+		num2 = mok;
+        if(nmg==1) cnt1++;
+ 	}while(mok!=0);
+    mok=1;
+    num2=n+1;
+    k=num2;
+    while(1){
+       do{
+		
+		mok = num2/2;
+		nmg = num2-mok*2;
+		num2 = mok;
+           if(nmg==1) cnt2++;
+ 	}while(mok!=0);
+        mok=1;
+        if(cnt1==cnt2){
+            answer=k;
+            return answer;
+        }
+        cnt2=0;
+        k++;
+        num2=k;
+        
+}
+
+}
