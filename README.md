@@ -4,7 +4,7 @@
 * 1번  :https://programmers.co.kr/learn/courses/30/lessons/43162
 * 2번 : https://programmers.co.kr/learn/courses/30/lessons/43163
 * 3번 : https://programmers.co.kr/learn/courses/30/lessons/12945
-* 4번 : https://programmers.co.kr/learn/courses/30/lessons/42746
+* 4번 : https://programmers.co.kr/learn/courses/30/lessons/42883
 * 5번 : https://programmers.co.kr/learn/courses/30/lessons/1829
 * 6번 : https://programmers.co.kr/learn/courses/30/lessons/43164
 * 7번 : https://programmers.co.kr/learn/courses/30/lessons/49994
