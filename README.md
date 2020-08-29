@@ -1,24 +1,8 @@
 # Problem-Solving List
 
-### 2020/08/23 by Programmers
-* 1번  :https://programmers.co.kr/learn/courses/30/lessons/43162
-* 2번 : https://programmers.co.kr/learn/courses/30/lessons/43163
-* 3번 : https://programmers.co.kr/learn/courses/30/lessons/12945
-* 4번 : https://programmers.co.kr/learn/courses/30/lessons/42883
-* 5번 : https://programmers.co.kr/learn/courses/30/lessons/1829
-* 6번 : https://programmers.co.kr/learn/courses/30/lessons/43164
-* 7번 : https://programmers.co.kr/learn/courses/30/lessons/49994
-*****************************************************************************
-
-### 2020/08/20 by Programmers
-* 1번 : https://programmers.co.kr/learn/courses/30/lessons/12939
-* 2번 : https://programmers.co.kr/learn/courses/30/lessons/62048
-* 3번 : https://programmers.co.kr/learn/courses/30/lessons/12913
-* 4번 : https://programmers.co.kr/learn/courses/30/lessons/12911
-* 5번 : https://programmers.co.kr/learn/courses/30/lessons/17680
-* 6번 : https://programmers.co.kr/learn/courses/30/lessons/12949
-* 7번 : https://programmers.co.kr/learn/courses/30/lessons/42842
-*****************************************************************************
+### 2020/08/31 심화 알고리즘
+* 1번 : [BOJ 1562](https://www.acmicpc.net/problem/1562) **계단 수**
+* 2번 : [BOJ 2098](https://www.acmicpc.net/problem/2098) **외판원 순회**
 
 ### 2020/08/18 by Programmers
 * 1번 : https://programmers.co.kr/learn/courses/30/lessons/12905
