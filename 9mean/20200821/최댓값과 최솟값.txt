@@ -1,0 +1,24 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+string solution(string s) {
+    string answer = "";
+    vector <int> k;
+    int len=s.length();
+    int idx=0;
+    for(int i=0;i<len;i++)
+    {
+        if(s[i]==' '){
+            k.push_back(stoi(s.substr(idx,i)));
+            idx=i+1;
+        }
+    }
+    k.push_back(stoi(s.substr(idx, s.size())));
+	sort(k.begin(), k.end());
+	answer += to_string(k.front());
+	answer += " ";
+	answer += to_string(k.back());
+    return answer;
+}
