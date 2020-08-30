@@ -1,0 +1,36 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+int answer;
+void go(string begin,string target,vector<string> words,vector<bool> visit,int ccc){
+    for(int i=0;i<words.size();i++){
+        if(visit[i]) continue;
+        int cnt=0;
+        int size=words[i].length();
+        for(int j=0;j<size;j++){
+            if(begin[j] !=words[i][j]){
+                cnt++;
+            }
+        }
+        if(cnt==1){
+            if(answer> ccc +1 && target==words[i]){
+                answer=ccc+1;
+                return;
+            }
+            visit[i]=true;
+            go(words[i],target,words,visit,ccc+1);
+            visit[i]=false;
+        }
+    }
+    
+}
+int solution(string begin, string target, vector<string> words) {
+    answer=1111;
+    int size=words.size();
+    vector<bool> visit(size,false);
+    go(begin,target,words,visit,0);
+    if(answer==1111)
+        return 0;
+    return answer;
+}
