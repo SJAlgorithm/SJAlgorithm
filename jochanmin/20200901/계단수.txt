@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#define MOD 1000000000
+using namespace std;
+typedef long long ll;
+ll dp[110][11][1 << 11], n, r;
+ll func(ll pos, ll val, ll state) {
+    if (val < 0 || val > 9)
+        return 0;
+    if (pos == 1) {
+        if ((state | (1 << val)) == ((1 << 10) - 1))
+            return 1;
+        else
+            return 0;
+    }
+    ll &ret = dp[pos][val][state];
+    if (ret != -1)return ret;
+    state |= (1 << val);
+    return ret = (func(pos - 1, val + 1, state) + func(pos - 1, val - 1, state)) % MOD;
+}
+int main() {
+    scanf("%lld", &n);
+    memset(dp, -1, sizeof(dp));
+    for (ll i = 1; i < 10; i++)
+        r = (r + func(n, i, 0)) % MOD;
+    printf("%lld", r);
+    return 0;
+}

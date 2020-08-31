@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int solution(int cacheSize, vector<string> cities) {
+    int answer = 0;
+    deque<string> q;
+    if(!cacheSize)
+        return cities.size()*5;
+    for(int i=0;i<cities.size();i++){
+        transform(cities[i].begin(), cities[i].end(), cities[i].begin(), ::tolower);
+        auto dIdx=find(q.begin(),q.end(),cities[i]);
+        if( dIdx==q.end()){
+            if(q.size()<cacheSize){
+                q.push_front(cities[i]);
+                answer+=5;
+            }else{
+                q.erase(q.begin()+cacheSize);
+                q.push_front(cities[i]);
+                answer+=5;
+            }
+        }else{
+            q.erase(dIdx);
+            q.push_front(cities[i]);
+            answer+=1;
+        }
+    }
+    return answer;
+}
