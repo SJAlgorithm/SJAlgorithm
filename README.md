@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/09/02 일반 알고리즘
+* 1번 : [BOJ 5721](https://www.acmicpc.net/problem/5721) **사탕 줍기 대회**
+* 2번 : [BOJ 1749](https://www.acmicpc.net/problem/1749) **점수 따먹기**
+* 3번 : [BOJ 2473](https://www.acmicpc.net/problem/2473) **세 용액**
+* 4번 : [BOJ 15961](https://www.acmicpc.net/problem/15961) **회전 초밥**
+
 ### 2020/08/31 심화 알고리즘
 * 1번 : [BOJ 1562](https://www.acmicpc.net/problem/1562) **계단 수**
 * 2번 : [BOJ 2098](https://www.acmicpc.net/problem/2098) **외판원 순회**
