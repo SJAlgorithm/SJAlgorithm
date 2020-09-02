@@ -1,5 +1,12 @@
 # Problem-Solving List
 
+### 2020/09/04 일반 알고리즘
+
+* 1번 : [BOJ 1484](https://www.acmicpc.net/problem/1484) **다이어트**
+* 2번 : [BOJ 2230](https://www.acmicpc.net/problem/2230) **수 고르기**
+* 3번 : [BOJ 17828](https://www.acmicpc.net/problem/17828) **문자열 화폐**
+* 4번 : [BOJ 16916](https://www.acmicpc.net/problem/16916) **부분 문자열**
+
 ### 2020/09/02 일반 알고리즘
 * 1번 : [BOJ 5721](https://www.acmicpc.net/problem/5721) **사탕 줍기 대회**
 * 2번 : [BOJ 1749](https://www.acmicpc.net/problem/1749) **점수 따먹기**
