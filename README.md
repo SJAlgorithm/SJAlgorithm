@@ -1,5 +1,8 @@
 # Problem-Solving List
 
+* 1번 : [BOJ 1014](https://www.acmicpc.net/problem/1014) **컨닝**
+* 2번 : [BOJ 1194](https://www.acmicpc.net/problem/1194) **달이 차오른다, 가자.**
+
 ### 2020/09/04 일반 알고리즘
 
 * 1번 : [BOJ 1484](https://www.acmicpc.net/problem/1484) **다이어트**
