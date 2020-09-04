@@ -1,0 +1,27 @@
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+
+int n,left,right;
+ int a[100001],m,minsub=1234567899;
+int main() {
+	scanf("%d%d",&n,&m);
+	for(int i=0;i<n;i++) scanf("%d",&a[i]);
+	sort(a,a+n);
+	
+		left=0,right=0;
+		int sub=0;
+		while(left<=right&&right<n){
+		
+			sub=a[right]-a[left];
+			if(sub>=m) {
+				minsub=min(minsub,sub);
+				left++;
+			}
+			else right++;
+		}
+		printf("%d",minsub);
+	
+	return 0;
+}

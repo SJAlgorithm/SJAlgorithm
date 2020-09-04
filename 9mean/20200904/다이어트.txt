@@ -1,0 +1,38 @@
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+long long  G;
+vector<long long> ans;
+int main(void) {
+
+    cin >> G;
+
+    int loopSize = 50001;
+    
+    long long st,en;
+
+    st = en = 1;
+
+    while (en <= loopSize) {
+
+        if (en*en - st*st == G)   
+            ans.push_back(en);    
+
+        if (en*en - st*st <= G) 
+            en++;
+        else if (en*en - st*st > G)
+            st++;
+    }
+
+    if (ans.size()) {
+        sort(ans.begin(), ans.end());
+        for (long long num : ans)
+            cout << num << "\n";
+    }
+    else cout << -1 << "\n";
+
+    return 0;
+}
