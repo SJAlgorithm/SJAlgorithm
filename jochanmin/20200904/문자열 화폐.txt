@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+char arr[5000001];
+int main() {
+	
+	int n,x;scanf("%d %d",&n,&x);
+	if(n*26<x ||n>x)
+	 printf("!");
+	else{
+		for(int i=n-1;i>=0;i--){
+			int subSum=x-(i);
+			if(subSum>26)
+				subSum=26;
+			x=x-subSum;
+			arr[i]='A'+subSum-1;
+		}
+		printf("%s",arr);
+	}
+	return 0;
+}

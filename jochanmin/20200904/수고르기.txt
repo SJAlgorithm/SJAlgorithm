@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int arr[100001];
+int main() {
+	int n,m;scanf("%d %d",&n,&m);
+	for(int i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	sort(arr,arr+n);
+	int s=0,e=0,ans=2111111111;
+	while(1){
+		printf(" s e : %d %d \n",s,e); 
+		if(arr[e]-arr[s]<m)
+			e++;
+		else if(arr[e]-arr[s]>=m) {if(arr[e]-arr[s]<ans) ans=arr[e]-arr[s];s++;}
+		if(s>e) e++;
+		if(n==e) break;
+	}
+	printf("%d",ans);
+	return 0;
+}

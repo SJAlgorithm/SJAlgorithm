@@ -1,11 +1,26 @@
 # Problem-Solving List
 
-### 2020/09/04 일반 알고리즘
 
+### 2020/09/09 일반 알고리즘
+* 1번 : [BOJ 2236](https://www.acmicpc.net/problem/2236) **트리순회**
+* 2번 : [BOJ 2250](https://www.acmicpc.net/problem/2250) **트리와 높이와 너비**
+* 3번 : [BOJ 7579](https://www.acmicpc.net/problem/7579) **앱**
+
+*****************************************************************************
+
+### 2020/09/07 쉬운 알고리즘
+* 1번 : [BOJ 1014](https://www.acmicpc.net/problem/1014) **컨닝**
+* 2번 : [BOJ 1194](https://www.acmicpc.net/problem/1194) **달이 차오른다, 가자.**
+
+*****************************************************************************
+
+### 2020/09/04 일반 알고리즘
 * 1번 : [BOJ 1484](https://www.acmicpc.net/problem/1484) **다이어트**
 * 2번 : [BOJ 2230](https://www.acmicpc.net/problem/2230) **수 고르기**
 * 3번 : [BOJ 17828](https://www.acmicpc.net/problem/17828) **문자열 화폐**
 * 4번 : [BOJ 16916](https://www.acmicpc.net/problem/16916) **부분 문자열**
+
+*****************************************************************************
 
 ### 2020/09/02 일반 알고리즘
 * 1번 : [BOJ 5721](https://www.acmicpc.net/problem/5721) **사탕 줍기 대회**
@@ -13,9 +28,13 @@
 * 3번 : [BOJ 2473](https://www.acmicpc.net/problem/2473) **세 용액**
 * 4번 : [BOJ 15961](https://www.acmicpc.net/problem/15961) **회전 초밥**
 
+*****************************************************************************
+
 ### 2020/08/31 심화 알고리즘
 * 1번 : [BOJ 1562](https://www.acmicpc.net/problem/1562) **계단 수**
 * 2번 : [BOJ 2098](https://www.acmicpc.net/problem/2098) **외판원 순회**
+
+*****************************************************************************
 
 ### 2020/08/18 by Programmers
 * 1번 : https://programmers.co.kr/learn/courses/30/lessons/12905

@@ -1,0 +1,48 @@
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int n,one,two,thr,flag;
+long long answer[3];
+long long realSum=999999999999999999;
+int k;
+vector <long long> w;
+
+void func(int start){
+	
+	two=start+1;
+	thr=n-1;
+	while(two<thr){
+		long long sum=w[start]+w[two]+w[thr];
+        if(realSum>abs(sum)){
+			answer[0]=w[start];
+			answer[1]=w[two];
+			answer[2]=w[thr];
+			realSum=abs(sum);
+		}
+		
+        if(sum<0){
+			two++;
+		}
+		else if(sum==0){
+			start=n;
+			break;
+		}
+		else thr--;
+		
+		
+	}
+}
+int main() {
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%d",&k);
+		w.push_back(k);
+	}
+	sort(w.begin(),w.end());
+	for(int i=0;i<n-2;i++) func(i);
+	for(int i=0;i<3;i++) printf("%d ",answer[i]);
+	return 0;
+}

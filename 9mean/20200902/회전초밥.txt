@@ -1,0 +1,51 @@
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector <int> sushi;
+int n,d,k,c,num[3001],cnt,maxCnt,t;
+int main() {
+	scanf("%d%d%d%d",&n,&d,&k,&c);
+	for(int i=0;i<n;i++) {
+		scanf("%d",&t);
+		sushi.push_back(t);
+	}
+	for(int i=0;i<k;i++)
+		num[sushi[i]]++;
+	
+	for(int i=0;i<d;i++)
+		if(num[i]) cnt++;
+		
+	maxCnt=cnt;
+	//초기화 끝
+	int flag=0;
+	int prevCnt=maxCnt;
+	
+	for(int i=1;i<n;i++){
+		int cnt=prevCnt;
+		int target=i+k-1;
+		if(target>=n){
+			target=flag++;
+		}
+		num[sushi[i-1]]--;
+		num[sushi[target]]++;
+		
+		if(num[sushi[target]]==1&&num[sushi[i]])
+				cnt++;
+		else if((num[sushi[target]]>1&&num[sushi[i]])||(num[sushi[target]]>1&&!num[sushi[i]]))
+				cnt--;
+		
+		prevCnt=cnt;
+		
+		
+		if(cnt>=maxCnt){ 
+				if(!num[c]){ cnt++;
+					maxCnt=cnt;
+				}
+}
+	}
+	printf("%d",maxCnt);
+	return 0;
+}
