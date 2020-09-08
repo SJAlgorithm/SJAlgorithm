@@ -2,7 +2,7 @@
 
 
 ### 2020/09/09 일반 알고리즘
-* 1번 : [BOJ 2236](https://www.acmicpc.net/problem/2236) **트리순회**
+* 1번 : [BOJ 2263](https://www.acmicpc.net/problem/2263) **트리의 순회**
 * 2번 : [BOJ 2250](https://www.acmicpc.net/problem/2250) **트리와 높이와 너비**
 * 3번 : [BOJ 7579](https://www.acmicpc.net/problem/7579) **앱**
 
