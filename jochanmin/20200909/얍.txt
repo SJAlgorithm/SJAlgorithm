@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int dp[10001];
+    int n,m,num;
+    vector<int> memory,cost;
+    scanf("%d %d",&n,&m);
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        memory.push_back(num);
+    }
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        cost.push_back(num);
+    }
+    
+    for(int i=0;i<n;i++){
+        int tcost=cost[i];
+        for(int j=10000;j>=tcost;j--){
+            if(!dp[j-tcost]) continue;
+            dp[j]=max(dp[j],dp[j-tcost]+memory[i]);
+        }
+        if(memory[i]>dp[tcost]) dp[tcost]=memory[i];
+    }
+    for(int i=0;i<10001;i++){
+        if(dp[i]>=m)
+        {
+            printf("%d",i);
+            return 0;
+        }   
+    }
+}
