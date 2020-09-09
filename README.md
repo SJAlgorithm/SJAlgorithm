@@ -1,6 +1,13 @@
 # Problem-Solving List
 
 
+### 2020/09/11 일반 알고리즘
+* 1번 : [BOJ 18224](https://www.acmicpc.net/problem/18224) **미로에 갇힌 건우**
+* 2번 : [BOJ 19542](https://www.acmicpc.net/problem/19542) **전단지 돌리기**
+* 3번 : [BOJ 1595](https://www.acmicpc.net/problem/1595) **북쪽나라의 도로**
+
+*****************************************************************************
+
 ### 2020/09/09 일반 알고리즘
 * 1번 : [BOJ 2263](https://www.acmicpc.net/problem/2263) **트리의 순회**
 * 2번 : [BOJ 2250](https://www.acmicpc.net/problem/2250) **트리와 높이와 너비**
