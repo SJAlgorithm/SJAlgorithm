@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool check[10001];
+vector<pair<int,int>> vii[10001];
+int ans,EndToEnd;
+void go(int n,int sum){
+	check[n]=true;
+	
+	if(sum>ans){
+		ans=sum;
+		EndToEnd=n;
+	}
+	for(int i=0;i<vii[n].size();i++){
+		if(check[vii[n][i].first]==false)
+			go(vii[n][i].first,sum+vii[n][i].second);
+	}
+}
+int main() {
+	
+	int a,b,c;
+	while(scanf("%d%d%d",&a,&b,&c)!=EOF){
+		vii[a].push_back({b,c});
+		vii[b].push_back({a,c});
+	}
+	go(1,0);
+	ans=0;
+	memset(check,false,sizeof(check));
+	go(EndToEnd,0);
+	printf("%d",ans);
+	return 0;
+}

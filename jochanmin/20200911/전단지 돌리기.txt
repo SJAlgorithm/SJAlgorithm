@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> NowToEnd;
+vector<int> StartToNow;
+
+	vector<vector<int>> tree;
+	int n,s,d;
+	int ans;
+int go(int start){
+	int ret=NowToEnd[start];
+	for(int i=0;i<tree[start].size();i++){
+		int next=tree[start][i];
+		if(!NowToEnd[next]){
+			NowToEnd[next]=NowToEnd[start]+1;
+			ret=max(ret,go(next));
+		}
+	}
+	StartToNow[start]=ret;
+	if(StartToNow[start]-NowToEnd[start]>=d)
+		ans+=2;
+	return ret;
+}
+int main() {
+	scanf("%d %d %d",&n,&s,&d);
+	NowToEnd=vector<int>(n+1,0);
+	StartToNow=vector<int>(n+1,0);
+	tree=vector<vector<int>>(n+1);
+	for(int i=1;i<n;i++){
+		int u,v;scanf("%d %d",&u,&v);
+		tree[u].push_back(v);
+		tree[v].push_back(u);
+	}
+	NowToEnd[s]=1;
+	go(s);
+	ans-2 >=0 ? printf("%d",ans-2) :printf("%d",0);
+	
+	return 0;
+}
