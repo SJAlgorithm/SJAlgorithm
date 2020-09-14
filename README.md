@@ -1,5 +1,9 @@
 # Problem-Solving List
 
+### 2020/09/16 일반 알고리즘
+* 1번 : [BOJ 2176](https://www.acmicpc.net/problem/2176) **합리적인 이동경로**
+* 2번 : [BOJ 2533](https://www.acmicpc.net/problem/2533) **사회망 서비스(SNS)**
+* 3번 : [BOJ 1195](https://www.acmicpc.net/problem/1195) **킥다운**
 
 ### 2020/09/11 일반 알고리즘
 * 1번 : [BOJ 18224](https://www.acmicpc.net/problem/18224) **미로에 갇힌 건우**
