@@ -33,7 +33,7 @@ void solve(int stt) {
                 d[np] = nd;
                 pq.push({-nd, np});
             }
-            //if (d[np] < cd) dp[cp] += dp[np];
+            if (d[np] < cd) dp[cp] += dp[np];
 
         }
     }
