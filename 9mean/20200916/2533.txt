@@ -1,0 +1,50 @@
+#include <cstdio>
+#include <algorithm>
+#include <vector>
+#include <cstring>
+using namespace std;
+
+vector<vector<int>> node;
+int dp[1000001][2];
+int n;
+int func(int cur,int pre,int state){
+	
+	int &ret=dp[cur][state];
+	if(ret!=-1) return ret;
+int len=node[cur].size();
+	int answer=0;
+	
+	if(state==0){
+			
+		for(int i=0;i<len;i++){
+		int next=node[cur][i];
+			if(pre==next) continue;
+				answer+=func(next,cur,1);
+		}		   
+	    return ret=answer;
+	}
+	else{
+			
+		for(int i=0;i<len;i++){
+		int next=node[cur][i];
+			if(pre==next) continue;
+			answer+=min(func(next,cur,0),func(next,cur,1));
+		}		 
+		
+			return ret=answer+1;;
+	}
+}
+int main() {
+	
+	scanf("%d",&n);
+	node.resize(n+1);
+	memset(dp,-1,sizeof(dp));
+	for(int i=0;i<n-1;i++){
+		int a,b;
+		scanf("%d %d",&a,&b);
+		node[a].push_back(b);
+		node[b].push_back(a);
+	}
+	printf("%d",min(func(1,0,0),func(1,0,1)));
+	return 0;
+}
