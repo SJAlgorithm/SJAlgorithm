@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/11/09 복구 알고리즘
+* 1번 : [BOJ 1563](https://www.acmicpc.net/problem/1563) **개근상**
+* 2번 : [BOJ 1261](https://www.acmicpc.net/problem/2533) **알고스팟**
+* 3번 : [BOJ 1197](https://www.acmicpc.net/problem/1195) **최소 스패닝 트리**
+
+
 ### 2020/09/16 일반 알고리즘
 * 1번 : [BOJ 2176](https://www.acmicpc.net/problem/2176) **합리적인 이동경로**
 * 2번 : [BOJ 2533](https://www.acmicpc.net/problem/2533) **사회망 서비스(SNS)**
