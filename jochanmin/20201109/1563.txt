@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int arr[1001][2][3];
+int n;
+int go(int n,int a,int b){
+	if(a==2 || b==3) return 0;
+	if(n==0) return 1;
+	int &ret=arr[n][a][b];
+	if(ret) return ret;
+	ret+=go(n-1,a,0);
+	ret+=go(n-1,a+1,0);
+	ret+=go(n-1,a,b+1);
+	return ret%1000000;
+}
+int main() {
+	scanf("%d",&n);
+	printf("%d\n",go(n,0,0));
+	return 0;
+}

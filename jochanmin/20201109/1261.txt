@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+int n,m;
+int chk(int x,int y){
+	if(x>=0 && x<m && y>=0 && y<n)
+		return 1;
+	return 0;
+}
+int main(void) {
+	int arr[101][101];
+	bool visit[101][101];
+	int dx[]={0,0,1,-1};
+	int dy[]={1,-1,0,0};
+	scanf("%d %d",&n,&m);
+	int i,j;
+	for(i=0;i<m;i++){
+		for(j=0;j<n;j++){
+			scanf("%1d",&arr[i][j]);
+		}
+	}
+	
+	priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<pair<int,pair<int,int>>>> q;
+	q.push({0,{0,0}});
+	visit[0][0]=true;
+	while(!q.empty()){
+		int x=q.top().second.first;
+		int y=q.top().second.second;
+		int cnt=q.top().first;
+		q.pop();
+		if(x==m-1 && y==n-1){
+			printf("%d",cnt);
+			return 0;
+		}
+		for(int i=0;i<4;i++){
+			int cx=x+dx[i];
+			int cy=y+dy[i];
+			if(chk(cx,cy) && visit[cx][cy]==false){
+				visit[cx][cy]=true;
+				if(arr[cx][cy]==1)
+					q.push({cnt+1,{cx,cy}});
+				else
+					q.push({cnt,{cx,cy}});
+			}
+		}
+	}
+	return 0;
+}
