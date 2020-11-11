@@ -3,7 +3,7 @@
 ### 2020/11/13 복구 알고리즘
 * 1번 : [BOJ 1766](https://www.acmicpc.net/problem/1766) **문제집**
 * 2번 : [BOJ 1717](https://www.acmicpc.net/problem/1717) **집합의 표현**
-* 3번 : [BOJ 1043](https://www.acmicpc.net/problem/1043) **거짓말**
+* 3번 : [BOJ 1976](https://www.acmicpc.net/problem/1976) **여행 가자**
 
 *****************************************************************************
 
