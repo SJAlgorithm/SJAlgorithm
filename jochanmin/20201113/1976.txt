@@ -1,0 +1,42 @@
+#include <cstdio>
+#include <vector>
+using namespace std;
+int arr[201][201];
+int parent[201];
+int find(int node){
+	if(parent[node]==node)
+	 return node;
+	else 
+	 return parent[node]=find(parent[node]);
+}
+void union_find(int a,int b){
+	a=find(a);
+	b=find(b);
+	parent[b]=a;
+}
+int main() {
+	int n,m;
+	scanf("%d %d",&n,&m);
+	for(int i=1;i<=n;i++) parent[i]=i;
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=n;j++){
+			scanf("%d",&arr[i][j]);
+			if(i==j && find(i)==find(j)) continue;
+			if(arr[i][j]==1){
+				union_find(i,j);
+			}
+		}
+	}
+	int ret,a;
+	scanf("%d",&a);
+	ret=find(a);
+	for(int i=1;i<m;i++){
+		scanf("%d",&a);
+		if(find(a)!=ret){
+			printf("NO\n");
+			return 0;
+		}
+	}
+	printf("YES\n");
+	return 0;
+}

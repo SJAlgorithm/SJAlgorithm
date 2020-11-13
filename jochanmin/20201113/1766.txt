@@ -1,0 +1,34 @@
+#include<cstdio>
+#include<algorithm>
+#include<vector>
+#include<queue>
+#define MAX 32001
+
+using namespace std;
+
+int n,m,a,b,inDegree[MAX];
+vector<int> arr[MAX];
+priority_queue<int> pq;
+int main(){
+	scanf("%d %d",&n,&m);
+	for(int i=0;i<m;i++){
+		scanf("%d %d",&a,&b);
+		arr[a].push_back(b);
+		inDegree[b]++;
+	}
+	for(int i=1;i<=n;i++){
+		if(inDegree[i]==0)
+		 pq.push(-i);
+	}
+	while(!pq.empty()){
+		int now=-pq.top();
+		pq.pop();
+		printf("%d ",now);
+		for(int & p:arr[now]){
+			inDegree[p]--;
+			if(inDegree[p]==0)
+				pq.push(-p);
+		}
+	}
+	return 0;
+}
