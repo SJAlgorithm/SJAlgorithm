@@ -1,0 +1,40 @@
+#include <cstdio>
+#include <algorithm>
+#include <vector>
+#include <queue>
+using namespace std;
+int n, m, a, b;
+int info[32001];
+vector<vector<int>> v;
+     
+void fun(){
+	priority_queue<int> pq;
+	for (int i = 1; i <= n; i++) {
+        if (!info[i])
+            pq.push(-i);
+    }
+    while (pq.size()) {
+
+  
+        int answer= -pq.top();
+        pq.pop();
+        printf("%d ", answer);
+        for (int k : v[answer]) {
+            info[k]--;
+            if (!info[k])
+                pq.push(-k);
+        }
+    
+    }
+}
+int main() {
+    scanf("%d%d", &n, &m);
+    v.resize(n + 1);
+    for (int i = 0; i < m; i++) {
+        scanf("%d%d", &a, &b);
+        v[a].push_back(b);
+        info[b]++;
+    }
+    fun();
+    return 0;
+}
