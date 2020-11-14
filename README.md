@@ -1,6 +1,20 @@
 # Problem-Solving List
 
-### 2020/11/09 복구 알고리즘
+### 2020/11/16 복구 알고리즘
+* 1번 : [BOJ 2412](https://www.acmicpc.net/problem/2412) **암벽등반**
+* 2번 : [BOJ 12893](https://www.acmicpc.net/problem/12893) **적의 적**
+* 3번 : [BOJ 14948](https://www.acmicpc.net/problem/14948) **군대탈출하기**
+
+*****************************************************************************
+
+### 2020/11/13 복구 알고리즘
+* 1번 : [BOJ 1766](https://www.acmicpc.net/problem/1766) **문제집**
+* 2번 : [BOJ 1717](https://www.acmicpc.net/problem/1717) **집합의 표현**
+* 3번 : [BOJ 1976](https://www.acmicpc.net/problem/1976) **여행 가자**
+
+*****************************************************************************
+
+### 2020/11/11 복구 알고리즘
 * 1번 : [BOJ 1563](https://www.acmicpc.net/problem/1563) **개근상**
 * 2번 : [BOJ 1261](https://www.acmicpc.net/problem/1261) **알고스팟**
 * 3번 : [BOJ 1197](https://www.acmicpc.net/problem/1197) **최소 스패닝 트리**

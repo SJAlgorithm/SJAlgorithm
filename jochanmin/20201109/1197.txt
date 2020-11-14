@@ -1,0 +1,48 @@
+#include <cstdio>
+#include<vector>
+#include<queue>
+#define INF 123456789
+using namespace std;
+
+vector<pair<int, int>> arr[10001];
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>> > dist;
+bool visit[10001];
+
+long long prim(int n) {
+    long long ret = 0;
+    for (int i = 1; i <= n; i++) {
+        visit[i] = false;
+    }
+    dist.push(make_pair(0, 1));// w v 
+    for (int i = 1; i <= n; i++) {
+        int now = -1, min_dist = INF;
+        while (!dist.empty()) {
+            now = dist.top().second;
+            if (!visit[now]) {
+                min_dist = dist.top().first;
+                break;
+            }
+            dist.pop();
+        }
+        if (min_dist == INF) return (long long)INF;
+        ret += min_dist;
+        visit[now] = true;
+        for (auto edge : arr[now]) {
+            dist.push(edge);
+        }
+    }
+    return ret;
+}
+
+int main() {
+    int n, m;
+    scanf("%d %d", &n, &m);
+    while (m--) {
+        int u, v, w;
+        scanf("%d %d %d", &u, &v, &w);
+        arr[u].push_back(make_pair(w, v));
+        arr[v].push_back(make_pair(w, u));
+    }
+    printf("%lld", prim(n));
+    return 0;
+}
