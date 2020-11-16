@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/11/18 세그먼트 트리
+* 1번 : [BOJ 1275](https://www.acmicpc.net/problem/1275) **커피숍2**
+* 3번 : [BOJ 2357](https://www.acmicpc.net/problem/2357) **최솟값과 최댓값**
+
+*****************************************************************************
+
 ### 2020/11/16 복구 알고리즘
 * 1번 : [BOJ 2412](https://www.acmicpc.net/problem/2412) **암벽등반**
 * 2번 : [BOJ 12893](https://www.acmicpc.net/problem/12893) **적의 적**
