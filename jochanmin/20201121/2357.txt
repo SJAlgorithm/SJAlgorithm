@@ -1,0 +1,57 @@
+// Ref baekjoon blog 
+#include <cstdio>
+#include <cmath>
+#include <vector>
+using namespace std;
+long long maxinit(vector<long long> &a, vector<long long> &tree, int node, int start, int end) {
+    if (start == end) {
+        return tree[node] = a[start];
+    } else {
+        return tree[node] = max(maxinit(a, tree, node*2, start, (start+end)/2) , maxinit(a, tree, node*2+1, (start+end)/2+1, end));
+    }
+}
+long long mininit(vector<long long> &a, vector<long long> &tree, int node, int start, int end) {
+    if (start == end) {
+        return tree[node] = a[start];
+    } else {
+        return  tree[node] =min( mininit(a, tree, node*2, start, (start+end)/2) , mininit(a, tree, node*2+1, (start+end)/2+1, end));
+    }
+}
+long long findmin(vector<long long> &tree, int node, int start, int end, int left, int right) {
+    if (left > end || right < start) {
+        return 1234567891;
+    }
+    if (left <= start && end <= right) {
+        return tree[node];
+    }
+    return min(findmin(tree, node*2, start, (start+end)/2, left, right), findmin(tree, node*2+1, (start+end)/2+1, end, left, right));
+}
+long long findmax(vector<long long> &tree, int node, int start, int end, int left, int right) {
+    if (left > end || right < start) {
+        return 0;
+    }
+    if (left <= start && end <= right) {
+        return tree[node];
+    }
+    return max(findmax(tree, node*2, start, (start+end)/2, left, right), findmax(tree, node*2+1, (start+end)/2+1, end, left, right));
+}
+int main() {
+    int n, m, k;
+    scanf("%d %d",&n,&m);
+    vector<long long> a(n);
+    int h = (int)ceil(log2(n));
+    int tree_size = (1 << (h+1));
+    vector<long long> tree(tree_size);
+    vector<long long> tree2(tree_size);
+    for (int i=0; i<n; i++) {
+        scanf("%d",&a[i]);
+    }
+    maxinit(a, tree, 1, 0, n-1);
+    mininit(a,tree2, 1, 0, n-1);
+    while (m--) {
+        int t2,t3;
+        scanf("%d%d",&t2,&t3);
+        printf("%lld %lld\n",findmin(tree2, 1, 0, n-1, t2-1, t3-1),findmax(tree, 1, 0, n-1, t2-1, t3-1));
+    }
+    return 0;
+}
