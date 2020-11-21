@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/11/23 세그먼트 트리2
+* 1번 : [BOJ 2243](https://www.acmicpc.net/problem/1275) **사탕상자**
+* 2번 : [BOJ 1306](https://www.acmicpc.net/problem/2357) **달려라 **
+
+*****************************************************************************
+
 ### 2020/11/18 세그먼트 트리
 * 1번 : [BOJ 1275](https://www.acmicpc.net/problem/1275) **커피숍2**
 * 2번 : [BOJ 2357](https://www.acmicpc.net/problem/2357) **최솟값과 최댓값**
