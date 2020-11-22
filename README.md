@@ -1,8 +1,8 @@
 # Problem-Solving List
 
 ### 2020/11/23 세그먼트 트리2
-* 1번 : [BOJ 2243](https://www.acmicpc.net/problem/1275) **사탕상자**
-* 2번 : [BOJ 1306](https://www.acmicpc.net/problem/2357) **달려라홍준**
+* 1번 : [BOJ 2243](https://www.acmicpc.net/problem/2243) **사탕상자**
+* 2번 : [BOJ 1306](https://www.acmicpc.net/problem/1306) **달려라홍준**
 
 *****************************************************************************
 
