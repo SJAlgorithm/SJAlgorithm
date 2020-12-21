@@ -1,5 +1,14 @@
 # Problem-Solving List
 
+### 2020/12/21 세그먼트 트리3
+* 1번 : [BOJ 9426](https://www.acmicpc.net/problem/9426) **중앙값 측정**
+* 2번 : [BOJ 5676](https://www.acmicpc.net/problem/5676) **음주 코딩**
+* 3번 : [BOJ 12846](https://www.acmicpc.net/problem/12846) **무서운 아르바이트**
+* 4번 : [BOJ 2104](https://www.acmicpc.net/problem/2104) **부분배열 고르기**
+* 5번 : [BOJ 6549](https://www.acmicpc.net/problem/6549) **히스토그램에서 가장 큰 직사각형**
+
+*****************************************************************************
+
 ### 2020/11/23 세그먼트 트리2
 * 1번 : [BOJ 2243](https://www.acmicpc.net/problem/2243) **사탕상자**
 * 2번 : [BOJ 1306](https://www.acmicpc.net/problem/1306) **달려라홍준**
