@@ -1,5 +1,11 @@
 # Problem-Solving List
 
+### 2020/12/26 세그먼트 트리4
+* 1번 : [BOJ 9426](https://www.acmicpc.net/problem/9426) **중앙값 측정**, [BOJ 1168](https://www.acmicpc.net/problem/1168) **중앙값 측정** 
+* 2번 : [BOJ 11505](https://www.acmicpc.net/problem/11505) **구간곱 구하기**
+* 3번 : [BOJ 12846](https://www.acmicpc.net/problem/12846) **무서운 아르바이트**, [BOJ 6549](https://www.acmicpc.net/problem/6549) **히스토그램에서 가장 큰 직사각형**
+* 4번 : [BOJ 2104](https://www.acmicpc.net/problem/2104) **부분배열 고르기**
+
 ### 2020/12/21 세그먼트 트리3
 * 1번 : [BOJ 9426](https://www.acmicpc.net/problem/9426) **중앙값 측정**
 * 2번 : [BOJ 5676](https://www.acmicpc.net/problem/5676) **음주 코딩**
