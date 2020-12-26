@@ -1,0 +1,42 @@
+#include <cstdio>
+#include <algorithm>
+#include<vector>
+#define MOD 1000000007
+typedef long long ll;
+using namespace std;
+
+ll seg[1000001<<2];
+int n,m;
+ll update(int pos,int val,int node,int x,int y){
+	if(pos<x || y<pos)
+		return seg[node];
+	if(x==y)
+		return seg[node]=val;
+	int mid=(x+y)>>1;
+	return seg[node]=((update(pos,val,node*2,x,mid)*update(pos,val,node*2+1,mid+1,y)))%MOD;
+}
+ll index_query(int s,int e,int node,int x,int y){
+	if(y<s || e<x)
+		return 1;
+	if(s<=x && y<=e)
+		return seg[node];
+	int mid=(x+y)>>1;
+	return ((index_query(s,e,node*2,x,mid)*index_query(s,e,node*2+1,mid+1,y)))%MOD;
+}
+int main(){
+	int n,m,k;
+	scanf("%d %d %d",&n,&m,&k);
+	for(int i=1;i<=n;i++){
+		int val;scanf("%d",&val);
+		update(i,val,1,1,n);
+	}
+	for(int i=0;i<m+k;i++){
+		int a,b,c;
+		scanf("%d%d%d",&a,&b,&c);
+		if(a==1)
+			update(b,c,1,1,n);
+		else
+			printf("%lld\n",index_query(b,c,1,1,n));
+	}
+	return 0;
+}

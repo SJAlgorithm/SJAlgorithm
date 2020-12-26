@@ -1,0 +1,58 @@
+#include <cstdio>
+#include <algorithm>
+#include<vector>
+using namespace std;
+int seg[100001<<2];
+int n,m;
+int update(int pos,int val,int node,int x,int y){
+	if(pos<x || y<pos)
+		return seg[node];
+	if(x==y)
+		return seg[node]=val;
+	int mid=(x+y)>>1;
+	return seg[node]=update(pos,val,node*2,x,mid)+update(pos,val,node*2+1,mid+1,y);
+}
+int count_query(int val,int node,int x,int y){
+	if(x==y)
+		return x;
+	int mid=(x+y)>>1;
+	if(seg[node*2]>=val)
+		return count_query(val,node*2,x,mid);
+	else
+		return count_query(val-seg[node*2],node*2+1,mid+1,y);
+}
+int index_query(int s,int e,int node,int x,int y){
+	if(y<s || e<x)
+		return 0;
+	if(s<=x && y<=e)
+		return seg[node];
+	int mid=(x+y)>>1;
+	return index_query(s,e,node*2,x,mid)+index_query(s,e,node*2+1,mid+1,y);
+}
+int main(){
+	vector<int> ans;
+	int n,m;
+	scanf("%d %d",&n,&m);
+	for(int i=1;i<=n;i++){
+		update(i,1,1,1,n);
+	}
+	int MOD=n-1;
+	ans.push_back(m);
+	update(m,0,1,1,n);
+	for(int i=2;i<=n;i++){
+		int ret=index_query(1,ans.back(),1,1,n)+m;
+		ret%=MOD;
+		if(!ret) ret=MOD;
+		ans.push_back(count_query(ret,1,1,n));
+		update(ans.back(),0,1,1,n);
+		MOD--;
+	}
+	printf("<");
+    for (int i = 0; i < ans.size(); i++) {
+        if (i == ans.size() - 1)
+            printf("%d>\n", ans[i]);
+        else
+            printf("%d, ", ans[i]);
+    }
+    return 0;
+}

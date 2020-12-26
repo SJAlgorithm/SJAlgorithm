@@ -1,0 +1,56 @@
+#include <cstdio>
+#include<algorithm>
+using namespace std;
+typedef long long ll;
+int seg[100000<<2];
+int arr[100000];
+int n;
+void min_query(int node,int x,int y){
+	if(x==y) seg[node]=x;
+	else{
+		int mid=(x+y)>>1;
+		min_query(node*2,x,mid);
+		min_query(node*2+1,mid+1,y);
+		if(arr[seg[node*2]]<=arr[seg[node*2+1]]){
+			seg[node]=seg[node*2];
+		}else seg[node]=seg[node*2+1];
+	}
+}
+int query2(int lo,int hi,int node,int x,int y){
+	if (y < lo || hi < x)
+        return -1;
+    if (lo <= x&&y <= hi)
+        return seg[node];
+    int mid = (x + y) >> 1;
+    int left = query2(lo, hi, node * 2, x, mid);
+    int right = query2(lo, hi, node * 2 + 1, mid + 1, y);
+    if (left == -1)return right;
+    else if (right == -1)return left;
+    else {
+        if (arr[left] <= arr[right])
+            return left;
+        else
+            return right;
+    }
+}
+ll query(int lo,int hi){
+	int minst=query2(lo,hi,1,0,n-1);
+	ll res=(ll)(hi-lo+1)*(ll)arr[minst];
+	if(lo<=minst-1){
+		ll ans=query(lo,minst-1);
+		if(res<ans) res=ans;
+	}
+	if(minst+1<=hi){
+		ll ans=query(minst+1,hi);
+		if(res<ans) res=ans;
+	}
+	return res;
+}
+int main() {
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+		scanf("%d",&arr[i]);
+	min_query(1,0,n-1);
+	printf("%lld\n",query(0,n-1));
+	return 0;
+}

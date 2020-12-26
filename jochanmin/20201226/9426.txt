@@ -1,0 +1,38 @@
+#include <cstdio>
+#include <algorithm>
+#define MAX_N 250001
+#define MAX 65536
+using namespace std;
+typedef long long ll;
+ll seg[4 * MAX];
+int arr[MAX_N];
+ll update(int pos, int val, int node, int x, int y) {
+    if (y < pos || pos < x)
+        return seg[node];
+    if (x == y)return seg[node] += val;
+    ll mid = (x + y) >> 1;
+    return seg[node] = update(pos, val, node * 2, x, mid) + update(pos, val, node * 2 + 1, mid + 1, y);
+}
+ll query(int val, int node, int x, int y) {
+    ll mid = (x + y) >> 1;
+    if (x == y)return x;
+    if (seg[node * 2] >= (ll)val)return query(val, node * 2, x, mid);
+    return query(val - seg[node * 2], node * 2 + 1, mid + 1, y);
+}
+int main() {
+	int n,k;
+	ll ret=0;
+    scanf("%d%d", &n, &k);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 0; i < k - 1; i++) 
+        update(arr[i], 1, 1, 0, MAX - 1);
+    for (int i = k - 1; i < n; i++) {
+        update(arr[i], 1, 1, 0, MAX - 1);
+        ret += query((k + 1) / 2, 1, 0, MAX - 1);
+        update(arr[i - k + 1], -1, 1, 0, MAX - 1);
+    }
+    printf("%lld", ret);
+    return 0;
+}
