@@ -1,8 +1,8 @@
 # Problem-Solving List
 
-### 2020/12/30 네트워크 플로우
-* 1번 : [BOJ 1014](https://www.acmicpc.net/problem/1014) **컨닝**
-* 2번 : [BOJ 6086](https://www.acmicpc.net/problem/6086) **최대 유량**
+### 2021/01/01 네트워크 플로우
+* 1번 : [BOJ 6086](https://www.acmicpc.net/problem/6086) **최대 유량**
+* 1번 : [BOJ 2367](https://www.acmicpc.net/problem/2367) **파티**
 
 *****************************************************************************
 
