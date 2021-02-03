@@ -1,8 +1,17 @@
 # Problem-Solving List
 
+### 2021/02/07 7문제
+* A : [BOJ 1245](https://www.acmicpc.net/problem/1245) **농장 관리**
+* B : [BOJ 6087](https://www.acmicpc.net/problem/6087) **레이저 통신**
+* C : [BOJ 2343](https://www.acmicpc.net/problem/2343) **기타 레슨**
+* D : [BOJ 13975](https://www.acmicpc.net/problem/13975) **파일 합치기 3**
+* E : [BOJ 2491](https://www.acmicpc.net/problem/2491) **수열**
+* F : [BOJ 14921](https://www.acmicpc.net/problem/14921) **용액 합성하기**
+* G : [BOJ 1647](https://www.acmicpc.net/problem/1647) **도시 분할 계획**
+
 ### 2021/01/01 네트워크 플로우
 * 1번 : [BOJ 6086](https://www.acmicpc.net/problem/6086) **최대 유량**
-* 1번 : [BOJ 2367](https://www.acmicpc.net/problem/2367) **파티**
+* 2번 : [BOJ 2367](https://www.acmicpc.net/problem/2367) **파티**
 
 *****************************************************************************
 
