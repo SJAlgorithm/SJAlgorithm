@@ -9,6 +9,8 @@
 * F : [BOJ 14921](https://www.acmicpc.net/problem/14921) **용액 합성하기**
 * G : [BOJ 1647](https://www.acmicpc.net/problem/1647) **도시 분할 계획**
 
+*****************************************************************************
+
 ### 2021/01/01 네트워크 플로우
 * 1번 : [BOJ 6086](https://www.acmicpc.net/problem/6086) **최대 유량**
 * 2번 : [BOJ 2367](https://www.acmicpc.net/problem/2367) **파티**
