@@ -1,5 +1,17 @@
 # Problem-Solving List
 
+### 2021/02/17 7문제
+
+* A : [BOJ_15990](https://www.acmicpc.net/problem/15990) **1,2,3 더하기 5**
+* B : [BOJ_4781](https://www.acmicpc.net/problem/4781) **사탕 가게**
+* C : [BOJ_1106](https://www.acmicpc.net/problem/1106) **호텔**
+* D : [BOJ_14728](https://www.acmicpc.net/problem/14728) **벼락치기**
+* E : [BOJ_15991](https://www.acmicpc.net/problem/15991) **1,2,3 더하기 6**
+* F : [BOJ_15992](https://www.acmicpc.net/problem/15992) **1,2,3 더하기 7**
+* G : [BOJ_15993](https://www.acmicpc.net/problem/9347) **1,2,3 더하기 8**
+
+*****************************************************************************
+
 ### 2021/02/11 5문제
 
 * A : [BOJ_3649](https://www.acmicpc.net/problem/3649) **로봇 프로젝트**
