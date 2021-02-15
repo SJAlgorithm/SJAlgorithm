@@ -8,7 +8,7 @@
 * D : [BOJ_14728](https://www.acmicpc.net/problem/14728) **벼락치기**
 * E : [BOJ_15991](https://www.acmicpc.net/problem/15991) **1,2,3 더하기 6**
 * F : [BOJ_15992](https://www.acmicpc.net/problem/15992) **1,2,3 더하기 7**
-* G : [BOJ_15993](https://www.acmicpc.net/problem/BOJ_15993) **1,2,3 더하기 8**
+* G : [BOJ_15993](https://www.acmicpc.net/problem/15993) **1,2,3 더하기 8**
 
 *****************************************************************************
 
