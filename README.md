@@ -2,10 +2,10 @@
 
 ### 2021/02/21 4문제
 
-A : [BOJ_14925](https://www.acmicpc.net/problem/14925) **목장 건설하기**
-B : [BOJ_17498](https://www.acmicpc.net/problem/17498) **폴짝 게임**
-C : [BOJ_1943](https://www.acmicpc.net/problem/1943) **동전 분배**
-D : [BOJ_5527](https://www.acmicpc.net/problem/5527) **전구 장식**
+* A : [BOJ_14925](https://www.acmicpc.net/problem/14925) **목장 건설하기**
+* B : [BOJ_17498](https://www.acmicpc.net/problem/17498) **폴짝 게임**
+* C : [BOJ_1943](https://www.acmicpc.net/problem/1943) **동전 분배**
+* D : [BOJ_5527](https://www.acmicpc.net/problem/5527) **전구 장식**
 
 *****************************************************************************
 
