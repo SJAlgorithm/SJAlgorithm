@@ -5,6 +5,8 @@
 * A : [BOJ_2638](https://www.acmicpc.net/problem/2638) **치즈**
 * B : [BOJ_9489](https://www.acmicpc.net/problem/9489) **사촌**
 * C : [BOJ_2031](https://www.acmicpc.net/problem/2031) **이 쿠키 달지 않아!**
+* D : [BOJ_14675](https://www.acmicpc.net/problem/14675) **단절점과 단절선**
+* E : [BOJ_17073](https://www.acmicpc.net/problem/17073) **나무 위의 빗물**
 
 *****************************************************************************
 
