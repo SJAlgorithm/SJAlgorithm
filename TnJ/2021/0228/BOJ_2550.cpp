@@ -1,4 +1,5 @@
 // LIS 역추적 : https://www.crocus.co.kr/681
+// 비슷한 문제 : https://www.acmicpc.net/problem/14003
 
 #include<bits/stdc++.h>
 using namespace std;

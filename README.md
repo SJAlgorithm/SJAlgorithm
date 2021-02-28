@@ -3,10 +3,10 @@
 ### 2021/02/28 5문제
 
 * A : [BOJ_20444](https://www.acmicpc.net/problem/20444) **색종이와 가위**
-* B : [BOJ_2550](https://www.acmicpc.net/problem/2550)**전구**
-* C : [BOJ_10504](https://www.acmicpc.net/problem/10504)**덧셈**
-* D : [BOJ_11834](https://www.acmicpc.net/problem/11834)**홀짝**
-* E : [BOJ_9998](https://www.acmicpc.net/problem/9998)**블록 쌓기**
+* B : [BOJ_2550](https://www.acmicpc.net/problem/2550) **전구**
+* C : [BOJ_10504](https://www.acmicpc.net/problem/10504) **덧셈**
+* D : [BOJ_11834](https://www.acmicpc.net/problem/11834) **홀짝**
+* E : [BOJ_9998](https://www.acmicpc.net/problem/9998) **블록 쌓기**
 
 *****************************************************************************
 
