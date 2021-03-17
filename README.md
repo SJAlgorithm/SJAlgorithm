@@ -4,8 +4,8 @@
 ### 2021/03/21
 
 * A : [BOJ_10282](https://www.acmicpc.net/problem/10282) **해킹**
-* B : []() ****
-* C : []() ****
+* B : [BOJ 11779](https://www.acmicpc.net/problem/11779) **최소비용 구하기2**
+* C : [BOJ ]() ****
 * D : [BOJ_17144](https://www.acmicpc.net/problem/17144) **미세먼지 안녕!**
 * E : [BOJ_3176](https://www.acmicpc.net/problem/3176) **도로 네트워크**
 
