@@ -1,11 +1,11 @@
 # Problem-Solving List
 *****************************************************************************
 
-### 2021/03/21
+### 2021/03/21 5문제
 
-* A : []() ****
-* B : []() ****
-* C : []() ****
+* A : [BOJ_10282](https://www.acmicpc.net/problem/10282) **해킹**
+* B : [BOJ_11779](https://www.acmicpc.net/problem/11779) **최소비용 구하기2**
+* C : [BOJ_16118](https://www.acmicpc.net/problem/16118) **달빛 여우**
 * D : [BOJ_17144](https://www.acmicpc.net/problem/17144) **미세먼지 안녕!**
 * E : [BOJ_3176](https://www.acmicpc.net/problem/3176) **도로 네트워크**
 
