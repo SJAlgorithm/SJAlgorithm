@@ -1,6 +1,11 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2021/03/24 LCA복습
+
+* A : [BOJ_8012](https://www.acmicpc.net/problem/8012) **한동이는 영업사원!**
+* B : [BOJ_13511](https://www.acmicpc.net/problem/13511) **트리와 쿼리 2**
+
 ### 2021/03/21 5문제
 
 * A : [BOJ_10282](https://www.acmicpc.net/problem/10282) **해킹**
