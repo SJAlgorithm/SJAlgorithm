@@ -5,6 +5,7 @@
 
 * A : [BOJ_21276](https://www.acmicpc.net/problem/21276) **계보 복원가 호석**
 * B : [BOJ_17182](https://www.acmicpc.net/problem/17182) **우주 탐사선**
+* C : [BOJ 4179](https://www.acmicpc.net/problem/4179) **불!**
 
 *****************************************************************************
 
