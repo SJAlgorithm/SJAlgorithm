@@ -1,6 +1,16 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2021/04/04 5문제
+
+* A : [BOJ_1202](https://www.acmicpc.net/problem/1202) **보석 도둑**
+* B : [BOJ_11812](https://www.acmicpc.net/problem/11812) **K진 트리**
+* C : [BOJ 2696](https://www.acmicpc.net/problem/2696) **중앙값 구하기**
+* D : [BOJ_14725](https://www.acmicpc.net/problem/14725) **개미굴**
+* E : [BOJ_13029](https://www.acmicpc.net/problem/13029) **홍준이와 반물질**
+
+*****************************************************************************
+
 ### 2021/03/31
 
 * A : [BOJ_21276](https://www.acmicpc.net/problem/21276) **계보 복원가 호석**
