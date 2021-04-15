@@ -4,7 +4,7 @@
 using namespace std;
 
 bool row[9][10], col[9][10], box[9][10];
-char maze[9][9];
+int maze[9][9];
 bool flag = false;
 vector<pair<int,int>> zero;
 int getBox(int i, int j) {
@@ -47,11 +47,11 @@ void input() {
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
 			cin >> maze[i][j];
-			if (maze[i][j] != '0') {
-				row[i][maze[i][j] - '0'] = true;
-				col[j][maze[i][j] - '0'] = true;
+			if (maze[i][j] != 0) {
+				row[i][maze[i][j]] = true;
+				col[j][maze[i][j]] = true;
 				int b = getBox(i, j);
-				box[b][maze[i][j] - '0'] = true;
+				box[b][maze[i][j]] = true;
 			}
 			else {
 				zero.push_back({ i,j });
@@ -71,13 +71,13 @@ void dfs(int ind) {
 	int b = getBox(x, y);
 	for (int i = 1; i <= 9; i++) {
 		if (!row[x][i] && !col[y][i] && !box[b][i]) {
-			maze[x][y] = i + '0';
+			maze[x][y] = i;
 			row[x][i] = col[y][i] = box[b][i] = true;
 			dfs(ind + 1);
 			if (flag) {
 				return;
 			}
-			maze[x][y] ='0';
+			maze[x][y] =0;
 			row[x][i] = col[y][i] = box[b][i] = false;
 		}
 	}
@@ -87,7 +87,7 @@ void solve() {
 	dfs(0);
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
-			cout << maze[i][j] ;
+			cout << maze[i][j]<<" " ;
 		}
 		cout << "\n";
 	}
