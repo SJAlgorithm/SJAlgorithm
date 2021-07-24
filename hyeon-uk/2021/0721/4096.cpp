@@ -4,9 +4,8 @@
 
 using namespace std;
 
-string str;
 
-bool isRight(){
+bool isRight(string str){
     for(int i=0;i<str.size()/2;i++){
         if(str[i]!=str[str.size()-1-i]){
             return false;
@@ -15,7 +14,7 @@ bool isRight(){
     return true;
 }
 
-int stringToInt(){
+int stringToInt(string str){
     return stoi(str);
 }
 
@@ -30,13 +29,14 @@ string intToString(int n){
 int main(){
     cin.tie(NULL); cout.tie(NULL); ios_base::sync_with_stdio(false);
     while(true){
+        string str;
         cin>>str;
         if(str=="0") break;
         
         int cnt=0;
-        while(!isRight()){
+        while(!isRight(str)){
             cnt++;
-            int temp=stringToInt();
+            int temp=stringToInt(str);
             temp++;
             str=intToString(temp);
         }
