@@ -1,6 +1,20 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2021/11/01~2021/11/07
+* A : [BOJ_2920](https://www.acmicpc.net/problem/2920) **음계**
+* B : [BOJ_1120](https://www.acmicpc.net/problem/1120) **문자열**
+* C : [BOJ 9012](https://www.acmicpc.net/problem/9012) **괄호**
+* D : [BOJ_1181](https://www.acmicpc.net/problem/1181) **단어 정렬**
+* E : [BOJ_7568](https://www.acmicpc.net/problem/7568) **덩치**
+
+*****************************************************************************
+
+### 2021/11/01 부터
+* [깃헙참고](https://github.com/SSAFY-11-Algorithm-Study/AlgorithmStudy/blob/main/README.md)
+
+*****************************************************************************
+
 ### 2021/07/30 부터
 * [민상님 깃헙 문제](https://github.com/tony9402/baekjoon/blob/main/picked.md)
 * 2021/04/23 문제부터 하루에 한개씩 문제풀이
