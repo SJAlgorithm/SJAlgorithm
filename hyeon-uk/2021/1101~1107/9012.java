@@ -1,19 +1,18 @@
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
     public static boolean check(String str){
-        Queue<Character> q=new LinkedList<>();
+        Stack<Character> q=new Stack<>();
 
         for(int i=0;i<str.length();i++){
             char c=str.charAt(i);
 
             if(q.isEmpty()||c=='('){
-                q.add(c);
+                q.push(c);
             }
             else{
-                char p=q.poll();
+                char p=q.pop();
                 if(p==')'){
                     return false;
                 }
