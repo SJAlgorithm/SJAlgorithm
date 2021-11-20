@@ -1,6 +1,22 @@
 # Problem-Solving List
 *****************************************************************************
 
+* A : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43165) **타겟넘버**
+* B : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43162) **네트워크**
+* C : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43163) **단어 변환**
+* D : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43164) **여행경로**
+
+*****************************************************************************
+
+### 2021/11/01~2021/11/07
+* A : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43238) **입국심사**
+* B : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/43236) **징검다리**
+* C : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/49189) **가장 먼 노드**
+* D : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/49191) **순위**
+* E : [Programmers](https://programmers.co.kr/learn/courses/30/lessons/49190) **방의 개수**
+
+*****************************************************************************
+
 ### 2021/11/01~2021/11/07
 * A : [BOJ_2920](https://www.acmicpc.net/problem/2920) **음계**
 * B : [BOJ_1120](https://www.acmicpc.net/problem/1120) **문자열**
