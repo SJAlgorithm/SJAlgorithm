@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class api {
+public class Main {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int n,m,k;
