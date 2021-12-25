@@ -5,8 +5,8 @@
 * A : [BOJ](https://www.acmicpc.net/problem/7347) **플립과 시프트**
 * B : [BOJ](https://www.acmicpc.net/problem/2631) **줄세우기**
 * C : [BOJ](https://www.acmicpc.net/problem/11497) **통나무 건너뛰기**
-* D : [BOJ](https://programmers.co.kr/learn/courses/30/lessons/14676) **영우는 사기꾼**
-* E : [BOJ](https://programmers.co.kr/learn/courses/30/lessons/5567) **결혼식**
+* D : [BOJ](https://www.acmicpc.net/problem/14676) **영우는 사기꾼**
+* E : [BOJ](https://www.acmicpc.net/problem/5567) **결혼식**
 * F : [BOJ](https://www.acmicpc.net/problem/22942) **데이터 체커**
 
 *****************************************************************************
