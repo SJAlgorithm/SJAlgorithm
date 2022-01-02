@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/2~2022/1/8
+* A : [BOJ](https://www.acmicpc.net/problem/12896) **스크루지 민호**
+* B : [BOJ](https://www.acmicpc.net/problem/21313) **문어**
+* C : [BOJ](https://www.acmicpc.net/problem/1005) **ACM Craft**
+* D : [BOJ](https://www.acmicpc.net/problem/20327) **배열 돌리기 6**
+
+*****************************************************************************
+
 ### 2021/12/22~2022/01/02
 * A : [BOJ](https://www.acmicpc.net/problem/7347) **플립과 시프트**
 * B : [BOJ](https://www.acmicpc.net/problem/2631) **줄세우기**
