@@ -1,0 +1,11 @@
+//통나무 건너뛰기
+//수열이 주어졌을때 그리디한 문제는 정렬로 접근해보자
+t=int(input())
+for i in range(t):
+	n=int(input())
+	trees=list(map(int,input().split()))
+	trees.sort()
+	res=0
+	for j in range(2,n):
+		res=max(res,trees[j]-trees[j-2])
+	print(res)

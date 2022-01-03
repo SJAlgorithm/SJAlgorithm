@@ -1,0 +1,17 @@
+//결혼식
+//전형적인 인접행렬 문제
+n = int(input())
+m = int(input())
+array = [[] for _ in range(n+1)]
+for _ in range(m):
+    x,y=map(int,input().split())
+    array[x].append(y)
+    array[y].append(x)
+visited = [0 for i in range(n+1)]
+for i in array[1]:
+    visited[i] = 1
+    for j in array[i]:
+        visited[j] = 1
+
+visited[1] = 0
+print(visited.count(1))
