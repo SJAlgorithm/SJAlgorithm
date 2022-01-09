@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/9~2022/1/15
+* A : [BOJ_14499](https://www.acmicpc.net/problem/14499) **주사위 굴리기**
+* B : [BOJ_1823](https://www.acmicpc.net/problem/1823) **수확**
+* C : [BOJ_2469](https://www.acmicpc.net/problem/2469) **사다리 타기**
+* D : [BOJ_16956](https://www.acmicpc.net/problem/16956) **늑대와 양**
+
+*****************************************************************************
+
 ### 2022/1/2~2022/1/8
 * A : [BOJ](https://www.acmicpc.net/problem/12896) **스크루지 민호**
 * B : [BOJ](https://www.acmicpc.net/problem/21313) **문어**
