@@ -1,7 +1,7 @@
 # Problem-Solving List
 *****************************************************************************
 
-### 2022/1/15~2022/1/21
+### 2022/1/16~2022/1/22
 * A : [BOJ_14950](https://www.acmicpc.net/problem/14950) **정복자**
 * B : [BOJ_11509](https://www.acmicpc.net/problem/11509) **풍선 맞추기**
 * C : [BOJ_4096](https://www.acmicpc.net/problem/4096) **팰린드로미터**
