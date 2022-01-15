@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/15~2022/1/21
+* A : [BOJ_14950](https://www.acmicpc.net/problem/14950) **정복자**
+* B : [BOJ_11509](https://www.acmicpc.net/problem/11509) **풍선 맞추기**
+* C : [BOJ_4096](https://www.acmicpc.net/problem/4096) **팰린드로미터**
+* D : [BOJ_21922](https://www.acmicpc.net/problem/21922) **학부 연구생 민상**
+
+*****************************************************************************
+
 ### 2022/1/9~2022/1/15
 * A : [BOJ_14499](https://www.acmicpc.net/problem/14499) **주사위 굴리기**
 * B : [BOJ_1823](https://www.acmicpc.net/problem/1823) **수확**
