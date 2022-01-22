@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/22~2022/1/28
+* A : [BOJ_20162](https://www.acmicpc.net/problem/20162) **간식 파티**
+* B : [BOJ_2374](https://www.acmicpc.net/problem/2374) **같은 수로 만들기**
+* C : [BOJ_1719](https://www.acmicpc.net/problem/1719) **택배**
+* D : [BOJ_2204](https://www.acmicpc.net/problem/2204) **도비의 난독증 테스트**
+
+*****************************************************************************
+
 ### 2022/1/16~2022/1/22
 * A : [BOJ_14950](https://www.acmicpc.net/problem/14950) **정복자**
 * B : [BOJ_11509](https://www.acmicpc.net/problem/11509) **풍선 맞추기**
