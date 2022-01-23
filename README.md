@@ -1,6 +1,30 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/23~2022/1/29
+* A : [BOJ_20162](https://www.acmicpc.net/problem/20162) **간식 파티**
+* B : [BOJ_2374](https://www.acmicpc.net/problem/2374) **같은 수로 만들기**
+* C : [BOJ_1719](https://www.acmicpc.net/problem/1719) **택배**
+* D : [BOJ_2204](https://www.acmicpc.net/problem/2204) **도비의 난독증 테스트**
+
+*****************************************************************************
+
+### 2022/1/16~2022/1/22
+* A : [BOJ_14950](https://www.acmicpc.net/problem/14950) **정복자**
+* B : [BOJ_11509](https://www.acmicpc.net/problem/11509) **풍선 맞추기**
+* C : [BOJ_4096](https://www.acmicpc.net/problem/4096) **팰린드로미터**
+* D : [BOJ_21922](https://www.acmicpc.net/problem/21922) **학부 연구생 민상**
+
+*****************************************************************************
+
+### 2022/1/9~2022/1/15
+* A : [BOJ_14499](https://www.acmicpc.net/problem/14499) **주사위 굴리기**
+* B : [BOJ_1823](https://www.acmicpc.net/problem/1823) **수확**
+* C : [BOJ_2469](https://www.acmicpc.net/problem/2469) **사다리 타기**
+* D : [BOJ_16956](https://www.acmicpc.net/problem/16956) **늑대와 양**
+
+*****************************************************************************
+
 ### 2022/1/2~2022/1/8
 * A : [BOJ](https://www.acmicpc.net/problem/12896) **스크루지 민호**
 * B : [BOJ](https://www.acmicpc.net/problem/21313) **문어**
