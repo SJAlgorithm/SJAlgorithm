@@ -1,0 +1,25 @@
+def findPel(s):
+	e=len(s)//2
+	cnt=0
+	for i in range(e):
+		if s[i]==s[len(s)-i-1]:
+			cnt+=1
+	if cnt==e:
+		return 1
+	else:
+		return 0
+			
+while True:
+	a=input()
+	aLen=len(a)
+	res=0
+	if a=='0':
+		break
+	else:
+		while findPel(a)!=1:
+			res+=1
+			a=str(int(a)+1)
+			a=(aLen-len(a))*'0'+a
+		else:
+			print(res)
+	

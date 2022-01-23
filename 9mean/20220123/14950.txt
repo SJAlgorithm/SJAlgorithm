@@ -1,0 +1,31 @@
+import heapq
+
+n, m, t = map(int, input().split())
+parent = [i for i in range(n+1)]
+pq = []
+
+def find(x):
+    if parent[x] == x:
+        return x
+    parent[x] = find(parent[x])
+    return parent[x]
+
+def union(x, y):
+    parent[find(y)] = find(x)
+    find(y)
+
+for i in range(m):
+    a, b, c = map(int, input().split())
+    heapq.heappush(pq, (c, a, b))
+
+ans = 0
+i = 0
+
+while pq:
+    c, a, b = map(int, heapq.heappop(pq))
+    if find(a) != find(b):
+        union(a,b)
+        ans += c + i*t
+        i+=1
+
+print(ans)
