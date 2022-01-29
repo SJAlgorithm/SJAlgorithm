@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/1/29~2022/2/4
+* A : [BOJ_4690](https://www.acmicpc.net/problem/4690) **완전 세제곱**
+* B : [BOJ_15900](https://www.acmicpc.net/problem/15900) **나무 탈출**
+* C : [BOJ_16437](https://www.acmicpc.net/problem/16437) **양 구출 작전**
+* D : [BOJ_2887](https://www.acmicpc.net/problem/2887) **행성 터널**
+
+*****************************************************************************
+
 ### 2022/1/23~2022/1/29
 * A : [BOJ_20162](https://www.acmicpc.net/problem/20162) **간식 파티**
 * B : [BOJ_2374](https://www.acmicpc.net/problem/2374) **같은 수로 만들기**
