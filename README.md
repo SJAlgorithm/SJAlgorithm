@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/2/6~2022/2/12
+* A : [BOJ_17610](https://www.acmicpc.net/problem/17610) **양팔저울**
+* B : [BOJ_3187](https://www.acmicpc.net/problem/3187) **양치기 꿍**
+* C : [BOJ_14391](https://www.acmicpc.net/problem/14391) **종이 조각**
+* D : [BOJ_2504](https://www.acmicpc.net/problem/2504) **괄호의 값**
+
+*****************************************************************************
+
 ### 2022/1/30~2022/2/5
 * A : [BOJ_4690](https://www.acmicpc.net/problem/4690) **완전 세제곱**
 * B : [BOJ_15900](https://www.acmicpc.net/problem/15900) **나무 탈출**
