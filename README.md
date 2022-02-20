@@ -1,7 +1,7 @@
 # Problem-Solving List
 *****************************************************************************
 
-### 2022/2/19~2022/2/25
+### 2022/2/20~2022/2/26
 * A : [BOJ_17212](https://www.acmicpc.net/problem/17212) **달나라 토끼를 위한 구매대금 지불 도우미**
 * B : [BOJ_7682](https://www.acmicpc.net/problem/7682) **틱택토**
 * C : [BOJ_1874](https://www.acmicpc.net/problem/1874) **스택 수열**
