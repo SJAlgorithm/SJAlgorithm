@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/2/26~2022/3/4
+* A : [BOJ_9375](https://www.acmicpc.net/problem/9375) **패션왕 신해빈**
+* B : [BOJ_11722](https://www.acmicpc.net/problem/11722) **가장 긴 감소하는 부분 수열**
+* C : [BOJ_2798](https://www.acmicpc.net/problem/2798) **블랙잭**
+* D : [BOJ_9342](https://www.acmicpc.net/problem/9342) **염색체**
+
+*****************************************************************************
+
 ### 2022/2/20~2022/2/26
 * A : [BOJ_17212](https://www.acmicpc.net/problem/17212) **달나라 토끼를 위한 구매대금 지불 도우미**
 * B : [BOJ_7682](https://www.acmicpc.net/problem/7682) **틱택토**
