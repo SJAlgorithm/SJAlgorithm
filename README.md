@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/3/6~2022/3/12
+* A : [BOJ_1864](https://www.acmicpc.net/problem/1864) **문어 숫자**
+* B : [BOJ_15664](https://www.acmicpc.net/problem/15664) **N과 M (10)**
+* C : [BOJ_14595](https://www.acmicpc.net/problem/14595) **동방 프로젝트 (Large)**
+* D : [BOJ_11568](https://www.acmicpc.net/problem/11568) **민균이의 계략**
+
+*****************************************************************************
+
 ### 2022/2/27~2022/3/5
 * A : [BOJ_9375](https://www.acmicpc.net/problem/9375) **패션왕 신해빈**
 * B : [BOJ_11722](https://www.acmicpc.net/problem/11722) **가장 긴 감소하는 부분 수열**
