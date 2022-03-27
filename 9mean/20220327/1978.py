@@ -1,21 +1,31 @@
 import sys
+global n
 
 
-def checkPrime(x):
-    cnt = 0
-    for i in range(2, x + 1):
-        if x % i == 0:
-            cnt += 1
-    if cnt == 1:
-        return 1
-    else:
-        return 0
+def checkValid(x, position):
+    l = len(x)
+    for i in range(position, n):
+
+        if x == phoneList[i][:l]:
+            return 1
+    return 0
 
 
-n = int(input())
-numList = list(map(int, sys.stdin.readline().split()))
-res = 0
-for x in numList:
-    if checkPrime(x) == 1:
-        res += 1
-print(res)
+t = int(input())
+for i in range(t):
+    n = int(input())
+    flag = 0
+    idx = 0
+    phoneList = []
+    for j in range(n):
+        num = input()
+        phoneList.append(num)
+    phoneList.sort()
+    for k in phoneList:
+        if checkValid(k, idx + 1) == 1:
+            flag = 1
+            print("NO")
+            break
+        idx += 1
+    if flag == 0:
+        print("YES")
