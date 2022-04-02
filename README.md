@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/4/2~2022/4/8
+* A : [BOJ_1699](https://www.acmicpc.net/problem/1699) **제곱수의 합**
+* B : [BOJ_15686](https://www.acmicpc.net/problem/15686) **치킨 배달**
+* C : [BOJ_1493](https://www.acmicpc.net/problem/1493) **박스 채우기**
+* D : [BOJ_17490](https://www.acmicpc.net/problem/17490) **일감호에 다리 놓기**
+
+*****************************************************************************
+
 ### 2022/3/27~2022/4/2
 * A : [BOJ_2422](https://www.acmicpc.net/problem/2422) **한윤정이 이탈리아에 가서 아이스크림을 사먹는데**
 * B : [BOJ_3980](https://www.acmicpc.net/problem/3980) **선발 명단**
