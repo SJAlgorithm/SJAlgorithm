@@ -46,6 +46,7 @@ public class BJ4096 {
                 }
             }
         }
+
         System.out.print(sb.toString());
     }
 }
