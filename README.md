@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/5/1~2022/5/7
+* A : [BOJ_10988](https://www.acmicpc.net/problem/10988) **팰린드롬인지 확인하기**
+* B : [BOJ_15721](https://www.acmicpc.net/problem/15721) **번데기**
+* C : [BOJ_6603](https://www.acmicpc.net/problem/6603) **로또**
+* D : [BOJ_20183](https://www.acmicpc.net/problem/20183) **골목 대장 호석 - 효율성 2**
+
+*****************************************************************************
+
 ### 2022/4/24~2022/4/30
 * A : [BOJ_11365](https://www.acmicpc.net/problem/11365) **!밀비 급일**
 * B : [BOJ_10809](https://www.acmicpc.net/problem/10809) **알파벳 찾기**
