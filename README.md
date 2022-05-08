@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/5/8~2022/5/14
+* A : [BOJ_12919](https://www.acmicpc.net/problem/12919) **A와 B 2**
+* B : [BOJ_18258](https://www.acmicpc.net/problem/18258) **큐 2**
+* C : [BOJ_20182](https://www.acmicpc.net/problem/20182) **골목 대장 호석 - 효율성 1**
+* D : [BOJ_7453](https://www.acmicpc.net/problem/7453) **합이 0인 네 정수**
+
+*****************************************************************************
+
 ### 2022/5/1~2022/5/7
 * A : [BOJ_10988](https://www.acmicpc.net/problem/10988) **팰린드롬인지 확인하기**
 * B : [BOJ_15721](https://www.acmicpc.net/problem/15721) **번데기**
