@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/6/12~2022/6/18
+* A : [BOJ_9536](https://www.acmicpc.net/problem/9536) **여우는 어떻게 울지?**
+* B : [BOJ_11653](https://www.acmicpc.net/problem/11653) **소인수분해**
+* C : [BOJ_14400](https://www.acmicpc.net/problem/14400) **편의점 2**
+* D : [BOJ_20438](https://www.acmicpc.net/problem/20438) **출석체크**
+
+*****************************************************************************
+
 ### 2022/6/5~2022/6/11
 * A : [BOJ_2665](https://www.acmicpc.net/problem/2665) **미로만들기**
 * B : [BOJ_21925](https://www.acmicpc.net/problem/21925) **짝수 팰린드롬**
