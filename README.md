@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/7/31~2022/8/6
+* A : [BOJ_17779](https://www.acmicpc.net/problem/17779) **게리맨더링 2**
+* B : [BOJ_10942](https://www.acmicpc.net/problem/10942) **팰린드롬?**
+* C : [BOJ_14600](https://www.acmicpc.net/problem/14600) **샤워실 바닥 깔기 (Small)**
+* D : [BOJ_1110](https://www.acmicpc.net/problem/1110) **더하기 사이클**
+
+*****************************************************************************
+
 ### 2022/7/24~2022/7/30
 * A : [BOJ_5766](https://www.acmicpc.net/problem/5766) **할아버지는 유명해!**
 * B : [BOJ_4097](https://www.acmicpc.net/problem/4097) **수익**
