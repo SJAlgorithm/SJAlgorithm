@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/8/7~2022/8/13
+* A : [BOJ_17845](https://www.acmicpc.net/problem/17845) **수강 과목**
+* B : [BOJ_18513](https://www.acmicpc.net/problem/18513) **샘터**
+* C : [BOJ_20115](https://www.acmicpc.net/problem/20115) **에너지 드링크**
+* D : [BOJ_14620](https://www.acmicpc.net/problem/14620) **꽃길**
+
+*****************************************************************************
+
 ### 2022/7/31~2022/8/6
 * A : [BOJ_17779](https://www.acmicpc.net/problem/17779) **게리맨더링 2**
 * B : [BOJ_10942](https://www.acmicpc.net/problem/10942) **팰린드롬?**
