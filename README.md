@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/8/14~2022/8/20
+* A : [BOJ_2839](https://www.acmicpc.net/problem/2839) **설탕 배달**
+* B : [BOJ_15666](https://www.acmicpc.net/problem/15666) **N과 M (12)**
+* C : [BOJ_1012](https://www.acmicpc.net/problem/1012) **유기농 배추**
+* D : [BOJ_1695](https://www.acmicpc.net/problem/1695) **팰린드롬 만들기**
+
+*****************************************************************************
+
 ### 2022/8/7~2022/8/13
 * A : [BOJ_17845](https://www.acmicpc.net/problem/17845) **수강 과목**
 * B : [BOJ_18513](https://www.acmicpc.net/problem/18513) **샘터**
