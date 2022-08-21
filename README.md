@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/8/21~2022/8/27
+* A : [BOJ_3085](https://www.acmicpc.net/problem/3085) **사탕 게임**
+* B : [BOJ_2961](https://www.acmicpc.net/problem/2961) **도영이가 만든 맛있는 음식**
+* C : [BOJ_17837](https://www.acmicpc.net/problem/17837) **새로운 게임 2**
+* D : [BOJ_2529](https://www.acmicpc.net/problem/2529) **부등호**
+
+*****************************************************************************
+
 ### 2022/8/14~2022/8/20
 * A : [BOJ_2839](https://www.acmicpc.net/problem/2839) **설탕 배달**
 * B : [BOJ_15666](https://www.acmicpc.net/problem/15666) **N과 M (12)**
