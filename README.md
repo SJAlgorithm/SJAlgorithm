@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/9/4~2022/9/10
+* A : [BOJ_18234](https://www.acmicpc.net/problem/18234) **당근 훔쳐 먹기**
+* B : [BOJ_20442](https://www.acmicpc.net/problem/20442) **ㅋㅋ루ㅋㅋ**
+* C : [BOJ_20300](https://www.acmicpc.net/problem/20300) **서강근육맨**
+* D : [BOJ_1990](https://www.acmicpc.net/problem/1990) **소수인팰린드롬**
+
+*****************************************************************************
+
 ### 2022/8/28~2022/9/3
 * A : [BOJ_15661](https://www.acmicpc.net/problem/15661) **링크와 스타트**
 * B : [BOJ_1758](https://www.acmicpc.net/problem/1758) **알바생 강호**
