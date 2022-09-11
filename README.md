@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/9/11~2022/9/17
+* A : [BOJ_1744](https://www.acmicpc.net/problem/1744) **수 묶기**
+* B : [BOJ_19947](https://www.acmicpc.net/problem/19947) **투자의 귀재 배주형**
+* C : [BOJ_14699](https://www.acmicpc.net/problem/14699) **관악산 등산**
+* D : [BOJ_2178](https://www.acmicpc.net/problem/2178) **미로 탐색**
+
+*****************************************************************************
+
 ### 2022/9/4~2022/9/10
 * A : [BOJ_18234](https://www.acmicpc.net/problem/18234) **당근 훔쳐 먹기**
 * B : [BOJ_20442](https://www.acmicpc.net/problem/20442) **ㅋㅋ루ㅋㅋ**
