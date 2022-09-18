@@ -1,6 +1,14 @@
 # Problem-Solving List
 *****************************************************************************
 
+### 2022/9/18~2022/9/24
+* A : [BOJ_2800](https://www.acmicpc.net/problem/2800) **괄호 제거**
+* B : [BOJ_2616](https://www.acmicpc.net/problem/2616) **소형기관차**
+* C : [BOJ_21756](https://www.acmicpc.net/problem/21756) **지우개**
+* D : [BOJ_9046](https://www.acmicpc.net/problem/9046) **복호화**
+
+*****************************************************************************
+
 ### 2022/9/11~2022/9/17
 * A : [BOJ_1744](https://www.acmicpc.net/problem/1744) **수 묶기**
 * B : [BOJ_19947](https://www.acmicpc.net/problem/19947) **투자의 귀재 배주형**
